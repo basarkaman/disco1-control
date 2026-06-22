@@ -1,0 +1,2110 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/run/wrappers/bin/uname"
+      - "/home/kaman/.nix-profile/bin/uname"
+      - "/nix/profile/bin/uname"
+      - "/home/kaman/.local/state/nix/profile/bin/uname"
+      - "/etc/profiles/per-user/kaman/bin/uname"
+      - "/nix/var/nix/profiles/default/bin/uname"
+    found: "/run/current-system/sw/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      The system is: Linux - 7.1.0 - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/run/wrappers/bin/gmake"
+      - "/home/kaman/.nix-profile/bin/gmake"
+      - "/nix/profile/bin/gmake"
+      - "/home/kaman/.local/state/nix/profile/bin/gmake"
+      - "/etc/profiles/per-user/kaman/bin/gmake"
+      - "/nix/var/nix/profiles/default/bin/gmake"
+      - "/run/current-system/sw/bin/gmake"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/gmake"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/gmake"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/gmake"
+      - "/run/wrappers/bin/make"
+      - "/home/kaman/.nix-profile/bin/make"
+      - "/nix/profile/bin/make"
+      - "/home/kaman/.local/state/nix/profile/bin/make"
+      - "/etc/profiles/per-user/kaman/bin/make"
+      - "/nix/var/nix/profiles/default/bin/make"
+    found: "/run/current-system/sw/bin/make"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "C compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cc"
+      - "gcc"
+      - "cl"
+      - "bcc"
+      - "xlc"
+      - "icx"
+      - "clang"
+    candidate_directories:
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/run/wrappers/bin/cc"
+      - "/home/kaman/.nix-profile/bin/cc"
+      - "/nix/profile/bin/cc"
+      - "/home/kaman/.local/state/nix/profile/bin/cc"
+      - "/etc/profiles/per-user/kaman/bin/cc"
+      - "/nix/var/nix/profiles/default/bin/cc"
+    found: "/run/current-system/sw/bin/cc"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/"
+    found: "/run/current-system/sw/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /run/current-system/sw/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /home/kaman/Projects/stm/rx/CMakeFiles/4.1.2/CompilerIdC/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ar"
+      - "ar"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    found: "/run/current-system/sw/bin/llvm-ar"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ranlib"
+      - "ranlib"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    found: "/run/current-system/sw/bin/llvm-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-strip"
+      - "strip"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    found: "/run/current-system/sw/bin/llvm-strip"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld.lld"
+      - "ld"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/run/current-system/sw/bin/ld.lld"
+      - "/run/wrappers/bin/ld.lld"
+      - "/home/kaman/.nix-profile/bin/ld.lld"
+      - "/nix/profile/bin/ld.lld"
+      - "/home/kaman/.local/state/nix/profile/bin/ld.lld"
+      - "/etc/profiles/per-user/kaman/bin/ld.lld"
+      - "/nix/var/nix/profiles/default/bin/ld.lld"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/ld.lld"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/ld.lld"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/ld.lld"
+    found: "/run/current-system/sw/bin/ld"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-nm"
+      - "nm"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    found: "/run/current-system/sw/bin/llvm-nm"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-objdump"
+      - "objdump"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    found: "/run/current-system/sw/bin/llvm-objdump"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-objcopy"
+      - "objcopy"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    found: "/run/current-system/sw/bin/llvm-objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-readelf"
+      - "readelf"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    found: "/run/current-system/sw/bin/llvm-readelf"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-dlltool"
+      - "dlltool"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    found: "/run/current-system/sw/bin/llvm-dlltool"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-addr2line"
+      - "addr2line"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    found: "/run/current-system/sw/bin/llvm-addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/run/current-system/sw/bin/tapi"
+      - "/run/wrappers/bin/tapi"
+      - "/home/kaman/.nix-profile/bin/tapi"
+      - "/nix/profile/bin/tapi"
+      - "/home/kaman/.local/state/nix/profile/bin/tapi"
+      - "/etc/profiles/per-user/kaman/bin/tapi"
+      - "/nix/var/nix/profiles/default/bin/tapi"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/tapi"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/tapi"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Compiler/Clang-FindBinUtils.cmake:26 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "LLVM archiver"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ar-21.1"
+      - "llvm-ar-21"
+      - "llvm-ar21"
+      - "llvm-ar"
+    candidate_directories:
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ar-21.1"
+      - "/run/current-system/sw/bin/llvm-ar-21.1"
+      - "/run/wrappers/bin/llvm-ar-21.1"
+      - "/home/kaman/.nix-profile/bin/llvm-ar-21.1"
+      - "/nix/profile/bin/llvm-ar-21.1"
+      - "/home/kaman/.local/state/nix/profile/bin/llvm-ar-21.1"
+      - "/etc/profiles/per-user/kaman/bin/llvm-ar-21.1"
+      - "/nix/var/nix/profiles/default/bin/llvm-ar-21.1"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/llvm-ar-21.1"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/llvm-ar-21.1"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/llvm-ar-21.1"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ar-21"
+      - "/run/current-system/sw/bin/llvm-ar-21"
+      - "/run/wrappers/bin/llvm-ar-21"
+      - "/home/kaman/.nix-profile/bin/llvm-ar-21"
+      - "/nix/profile/bin/llvm-ar-21"
+      - "/home/kaman/.local/state/nix/profile/bin/llvm-ar-21"
+      - "/etc/profiles/per-user/kaman/bin/llvm-ar-21"
+      - "/nix/var/nix/profiles/default/bin/llvm-ar-21"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/llvm-ar-21"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/llvm-ar-21"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/llvm-ar-21"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ar21"
+      - "/run/current-system/sw/bin/llvm-ar21"
+      - "/run/wrappers/bin/llvm-ar21"
+      - "/home/kaman/.nix-profile/bin/llvm-ar21"
+      - "/nix/profile/bin/llvm-ar21"
+      - "/home/kaman/.local/state/nix/profile/bin/llvm-ar21"
+      - "/etc/profiles/per-user/kaman/bin/llvm-ar21"
+      - "/nix/var/nix/profiles/default/bin/llvm-ar21"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/llvm-ar21"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/llvm-ar21"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/llvm-ar21"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ar"
+    found: "/run/current-system/sw/bin/llvm-ar"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Compiler/Clang-FindBinUtils.cmake:38 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "Generate index for LLVM archive"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ranlib-21.1"
+      - "llvm-ranlib-21"
+      - "llvm-ranlib21"
+      - "llvm-ranlib"
+    candidate_directories:
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ranlib-21.1"
+      - "/run/current-system/sw/bin/llvm-ranlib-21.1"
+      - "/run/wrappers/bin/llvm-ranlib-21.1"
+      - "/home/kaman/.nix-profile/bin/llvm-ranlib-21.1"
+      - "/nix/profile/bin/llvm-ranlib-21.1"
+      - "/home/kaman/.local/state/nix/profile/bin/llvm-ranlib-21.1"
+      - "/etc/profiles/per-user/kaman/bin/llvm-ranlib-21.1"
+      - "/nix/var/nix/profiles/default/bin/llvm-ranlib-21.1"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/llvm-ranlib-21.1"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/llvm-ranlib-21.1"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/llvm-ranlib-21.1"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ranlib-21"
+      - "/run/current-system/sw/bin/llvm-ranlib-21"
+      - "/run/wrappers/bin/llvm-ranlib-21"
+      - "/home/kaman/.nix-profile/bin/llvm-ranlib-21"
+      - "/nix/profile/bin/llvm-ranlib-21"
+      - "/home/kaman/.local/state/nix/profile/bin/llvm-ranlib-21"
+      - "/etc/profiles/per-user/kaman/bin/llvm-ranlib-21"
+      - "/nix/var/nix/profiles/default/bin/llvm-ranlib-21"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/llvm-ranlib-21"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/llvm-ranlib-21"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/llvm-ranlib-21"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ranlib21"
+      - "/run/current-system/sw/bin/llvm-ranlib21"
+      - "/run/wrappers/bin/llvm-ranlib21"
+      - "/home/kaman/.nix-profile/bin/llvm-ranlib21"
+      - "/nix/profile/bin/llvm-ranlib21"
+      - "/home/kaman/.local/state/nix/profile/bin/llvm-ranlib21"
+      - "/etc/profiles/per-user/kaman/bin/llvm-ranlib21"
+      - "/nix/var/nix/profiles/default/bin/llvm-ranlib21"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/llvm-ranlib21"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/llvm-ranlib21"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/llvm-ranlib21"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ranlib"
+    found: "/run/current-system/sw/bin/llvm-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Compiler/Clang-FindBinUtils.cmake:50 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_CLANG_SCAN_DEPS"
+    description: "`clang-scan-deps` dependency scanner"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "clang-scan-deps-21.1"
+      - "clang-scan-deps-21"
+      - "clang-scan-deps21"
+      - "clang-scan-deps"
+    candidate_directories:
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/clang-scan-deps-21.1"
+      - "/run/current-system/sw/bin/clang-scan-deps-21.1"
+      - "/run/wrappers/bin/clang-scan-deps-21.1"
+      - "/home/kaman/.nix-profile/bin/clang-scan-deps-21.1"
+      - "/nix/profile/bin/clang-scan-deps-21.1"
+      - "/home/kaman/.local/state/nix/profile/bin/clang-scan-deps-21.1"
+      - "/etc/profiles/per-user/kaman/bin/clang-scan-deps-21.1"
+      - "/nix/var/nix/profiles/default/bin/clang-scan-deps-21.1"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/clang-scan-deps-21.1"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/clang-scan-deps-21.1"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/clang-scan-deps-21.1"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/clang-scan-deps-21"
+      - "/run/current-system/sw/bin/clang-scan-deps-21"
+      - "/run/wrappers/bin/clang-scan-deps-21"
+      - "/home/kaman/.nix-profile/bin/clang-scan-deps-21"
+      - "/nix/profile/bin/clang-scan-deps-21"
+      - "/home/kaman/.local/state/nix/profile/bin/clang-scan-deps-21"
+      - "/etc/profiles/per-user/kaman/bin/clang-scan-deps-21"
+      - "/nix/var/nix/profiles/default/bin/clang-scan-deps-21"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/clang-scan-deps-21"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/clang-scan-deps-21"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/clang-scan-deps-21"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/clang-scan-deps21"
+      - "/run/current-system/sw/bin/clang-scan-deps21"
+      - "/run/wrappers/bin/clang-scan-deps21"
+      - "/home/kaman/.nix-profile/bin/clang-scan-deps21"
+      - "/nix/profile/bin/clang-scan-deps21"
+      - "/home/kaman/.local/state/nix/profile/bin/clang-scan-deps21"
+      - "/etc/profiles/per-user/kaman/bin/clang-scan-deps21"
+      - "/nix/var/nix/profiles/default/bin/clang-scan-deps21"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/clang-scan-deps21"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/clang-scan-deps21"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/clang-scan-deps21"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/clang-scan-deps"
+      - "/run/current-system/sw/bin/clang-scan-deps"
+      - "/run/wrappers/bin/clang-scan-deps"
+      - "/home/kaman/.nix-profile/bin/clang-scan-deps"
+      - "/nix/profile/bin/clang-scan-deps"
+      - "/home/kaman/.local/state/nix/profile/bin/clang-scan-deps"
+      - "/etc/profiles/per-user/kaman/bin/clang-scan-deps"
+      - "/nix/var/nix/profiles/default/bin/clang-scan-deps"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/clang-scan-deps"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/clang-scan-deps"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/clang-scan-deps"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "CC"
+      - "g++"
+      - "aCC"
+      - "cl"
+      - "bcc"
+      - "xlC"
+      - "icpx"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+    found: "/run/current-system/sw/bin/c++"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/"
+    found: "/run/current-system/sw/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /run/current-system/sw/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/kaman/Projects/stm/rx/CMakeFiles/4.1.2/CompilerIdCXX/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Compiler/Clang-FindBinUtils.cmake:26 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "LLVM archiver"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ar-21.1"
+      - "llvm-ar-21"
+      - "llvm-ar21"
+      - "llvm-ar"
+    candidate_directories:
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ar-21.1"
+      - "/run/current-system/sw/bin/llvm-ar-21.1"
+      - "/run/wrappers/bin/llvm-ar-21.1"
+      - "/home/kaman/.nix-profile/bin/llvm-ar-21.1"
+      - "/nix/profile/bin/llvm-ar-21.1"
+      - "/home/kaman/.local/state/nix/profile/bin/llvm-ar-21.1"
+      - "/etc/profiles/per-user/kaman/bin/llvm-ar-21.1"
+      - "/nix/var/nix/profiles/default/bin/llvm-ar-21.1"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/llvm-ar-21.1"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/llvm-ar-21.1"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/llvm-ar-21.1"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ar-21"
+      - "/run/current-system/sw/bin/llvm-ar-21"
+      - "/run/wrappers/bin/llvm-ar-21"
+      - "/home/kaman/.nix-profile/bin/llvm-ar-21"
+      - "/nix/profile/bin/llvm-ar-21"
+      - "/home/kaman/.local/state/nix/profile/bin/llvm-ar-21"
+      - "/etc/profiles/per-user/kaman/bin/llvm-ar-21"
+      - "/nix/var/nix/profiles/default/bin/llvm-ar-21"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/llvm-ar-21"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/llvm-ar-21"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/llvm-ar-21"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ar21"
+      - "/run/current-system/sw/bin/llvm-ar21"
+      - "/run/wrappers/bin/llvm-ar21"
+      - "/home/kaman/.nix-profile/bin/llvm-ar21"
+      - "/nix/profile/bin/llvm-ar21"
+      - "/home/kaman/.local/state/nix/profile/bin/llvm-ar21"
+      - "/etc/profiles/per-user/kaman/bin/llvm-ar21"
+      - "/nix/var/nix/profiles/default/bin/llvm-ar21"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/llvm-ar21"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/llvm-ar21"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/llvm-ar21"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ar"
+    found: "/run/current-system/sw/bin/llvm-ar"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Compiler/Clang-FindBinUtils.cmake:38 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "Generate index for LLVM archive"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ranlib-21.1"
+      - "llvm-ranlib-21"
+      - "llvm-ranlib21"
+      - "llvm-ranlib"
+    candidate_directories:
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ranlib-21.1"
+      - "/run/current-system/sw/bin/llvm-ranlib-21.1"
+      - "/run/wrappers/bin/llvm-ranlib-21.1"
+      - "/home/kaman/.nix-profile/bin/llvm-ranlib-21.1"
+      - "/nix/profile/bin/llvm-ranlib-21.1"
+      - "/home/kaman/.local/state/nix/profile/bin/llvm-ranlib-21.1"
+      - "/etc/profiles/per-user/kaman/bin/llvm-ranlib-21.1"
+      - "/nix/var/nix/profiles/default/bin/llvm-ranlib-21.1"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/llvm-ranlib-21.1"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/llvm-ranlib-21.1"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/llvm-ranlib-21.1"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ranlib-21"
+      - "/run/current-system/sw/bin/llvm-ranlib-21"
+      - "/run/wrappers/bin/llvm-ranlib-21"
+      - "/home/kaman/.nix-profile/bin/llvm-ranlib-21"
+      - "/nix/profile/bin/llvm-ranlib-21"
+      - "/home/kaman/.local/state/nix/profile/bin/llvm-ranlib-21"
+      - "/etc/profiles/per-user/kaman/bin/llvm-ranlib-21"
+      - "/nix/var/nix/profiles/default/bin/llvm-ranlib-21"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/llvm-ranlib-21"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/llvm-ranlib-21"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/llvm-ranlib-21"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ranlib21"
+      - "/run/current-system/sw/bin/llvm-ranlib21"
+      - "/run/wrappers/bin/llvm-ranlib21"
+      - "/home/kaman/.nix-profile/bin/llvm-ranlib21"
+      - "/nix/profile/bin/llvm-ranlib21"
+      - "/home/kaman/.local/state/nix/profile/bin/llvm-ranlib21"
+      - "/etc/profiles/per-user/kaman/bin/llvm-ranlib21"
+      - "/nix/var/nix/profiles/default/bin/llvm-ranlib21"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/llvm-ranlib21"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/llvm-ranlib21"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/llvm-ranlib21"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ranlib"
+    found: "/run/current-system/sw/bin/llvm-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Compiler/Clang-FindBinUtils.cmake:50 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS"
+    description: "`clang-scan-deps` dependency scanner"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "clang-scan-deps-21.1"
+      - "clang-scan-deps-21"
+      - "clang-scan-deps21"
+      - "clang-scan-deps"
+    candidate_directories:
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/clang-scan-deps-21.1"
+      - "/run/current-system/sw/bin/clang-scan-deps-21.1"
+      - "/run/wrappers/bin/clang-scan-deps-21.1"
+      - "/home/kaman/.nix-profile/bin/clang-scan-deps-21.1"
+      - "/nix/profile/bin/clang-scan-deps-21.1"
+      - "/home/kaman/.local/state/nix/profile/bin/clang-scan-deps-21.1"
+      - "/etc/profiles/per-user/kaman/bin/clang-scan-deps-21.1"
+      - "/nix/var/nix/profiles/default/bin/clang-scan-deps-21.1"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/clang-scan-deps-21.1"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/clang-scan-deps-21.1"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/clang-scan-deps-21.1"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/clang-scan-deps-21"
+      - "/run/current-system/sw/bin/clang-scan-deps-21"
+      - "/run/wrappers/bin/clang-scan-deps-21"
+      - "/home/kaman/.nix-profile/bin/clang-scan-deps-21"
+      - "/nix/profile/bin/clang-scan-deps-21"
+      - "/home/kaman/.local/state/nix/profile/bin/clang-scan-deps-21"
+      - "/etc/profiles/per-user/kaman/bin/clang-scan-deps-21"
+      - "/nix/var/nix/profiles/default/bin/clang-scan-deps-21"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/clang-scan-deps-21"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/clang-scan-deps-21"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/clang-scan-deps-21"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/clang-scan-deps21"
+      - "/run/current-system/sw/bin/clang-scan-deps21"
+      - "/run/wrappers/bin/clang-scan-deps21"
+      - "/home/kaman/.nix-profile/bin/clang-scan-deps21"
+      - "/nix/profile/bin/clang-scan-deps21"
+      - "/home/kaman/.local/state/nix/profile/bin/clang-scan-deps21"
+      - "/etc/profiles/per-user/kaman/bin/clang-scan-deps21"
+      - "/nix/var/nix/profiles/default/bin/clang-scan-deps21"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/clang-scan-deps21"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/clang-scan-deps21"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/clang-scan-deps21"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/clang-scan-deps"
+      - "/run/current-system/sw/bin/clang-scan-deps"
+      - "/run/wrappers/bin/clang-scan-deps"
+      - "/home/kaman/.nix-profile/bin/clang-scan-deps"
+      - "/nix/profile/bin/clang-scan-deps"
+      - "/home/kaman/.local/state/nix/profile/bin/clang-scan-deps"
+      - "/etc/profiles/per-user/kaman/bin/clang-scan-deps"
+      - "/nix/var/nix/profiles/default/bin/clang-scan-deps"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/clang-scan-deps"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/clang-scan-deps"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/clang-scan-deps"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-38kqGL"
+      binary: "/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-38kqGL"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-38kqGL'
+        
+        Run Build Command(s): /run/current-system/sw/bin/cmake -E env VERBOSE=1 /run/current-system/sw/bin/make -f Makefile cmTC_9cef2/fast
+        /run/current-system/sw/bin/make  -f CMakeFiles/cmTC_9cef2.dir/build.make CMakeFiles/cmTC_9cef2.dir/build
+        make[1]: Entering directory '/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-38kqGL'
+        Building C object CMakeFiles/cmTC_9cef2.dir/CMakeCCompilerABI.c.o
+        /run/current-system/sw/bin/cc   -std=gnu11   -v -MD -MT CMakeFiles/cmTC_9cef2.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_9cef2.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_9cef2.dir/CMakeCCompilerABI.c.o -c /run/current-system/sw/share/cmake-4.1/Modules/CMakeCCompilerABI.c
+        clang version 21.1.8
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /nix/store/wcwr4iq7c8f4ygn8bd1q0k3i51lmhz35-clang-21.1.8/bin
+        Found candidate GCC installation: /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0
+        Selected GCC installation: /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/nix/store/wcwr4iq7c8f4ygn8bd1q0k3i51lmhz35-clang-21.1.8/bin/clang-21" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-38kqGL -v -fcoverage-compilation-dir=/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-38kqGL -nostdsysteminc -resource-dir /nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root -dependency-file CMakeFiles/cmTC_9cef2.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_9cef2.dir/CMakeCCompilerABI.c.o -sys-header-deps -idirafter /nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include -cxx-isystem /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0 -cxx-isystem /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0/x86_64-unknown-linux-gnu -internal-isystem /nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root/include -fmacro-prefix-map=/nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.42-61-dev/include -fmacro-prefix-map=/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-15.2.0/include/c++/15.2.0 -fmacro-prefix-map=/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0/x86_64-unknown-linux-gnu=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-15.2.0/include/c++/15.2.0/x86_64-unknown-linux-gnu -std=gnu11 -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_9cef2.dir/CMakeCCompilerABI.c.o -x c /run/current-system/sw/share/cmake-4.1/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target x86_64-unknown-linux-gnu
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root/include
+         /nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include
+        End of search list.
+        Linking C executable cmTC_9cef2
+        /run/current-system/sw/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9cef2.dir/link.txt --verbose=1
+        clang version 21.1.8
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /nix/store/wcwr4iq7c8f4ygn8bd1q0k3i51lmhz35-clang-21.1.8/bin
+        Found candidate GCC installation: /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0
+        Selected GCC installation: /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/nix/store/drxcv33qq9ava7gdpik5xs9q2wfnhdb0-binutils-wrapper-2.46/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -pie -o cmTC_9cef2 /nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/Scrt1.o /nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crti.o /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtbeginS.o -L/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib -L/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0 -L/nix/store/chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib/lib -L/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0//lib -L/nix/store/xyikkpwkyxx6syba3kfrr0h67ig5hwmn-gcc-15.2.0-libgcc/lib -L/nix/store/jdgw7h0g0l8clmcasaspxnx6v62jz1il-clang-21.1.8-lib/lib -L/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0 -dynamic-linker=/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/ld-linux-x86-64.so.2 -v CMakeFiles/cmTC_9cef2.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtendS.o /nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crtn.o
+        GNU ld (GNU Binutils) 2.46
+        /run/current-system/sw/bin/cc  -v -Wl,-v CMakeFiles/cmTC_9cef2.dir/CMakeCCompilerABI.c.o -o cmTC_9cef2
+        make[1]: Leaving directory '/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-38kqGL'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root/include]
+          add: [/nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include]
+        end of search list found
+        collapse include dir [/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root/include] ==> [/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root/include]
+        collapse include dir [/nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include] ==> [/nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include]
+        implicit include dirs: [/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root/include;/nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-38kqGL']
+        ignore line: []
+        ignore line: [Run Build Command(s): /run/current-system/sw/bin/cmake -E env VERBOSE=1 /run/current-system/sw/bin/make -f Makefile cmTC_9cef2/fast]
+        ignore line: [/run/current-system/sw/bin/make  -f CMakeFiles/cmTC_9cef2.dir/build.make CMakeFiles/cmTC_9cef2.dir/build]
+        ignore line: [make[1]: Entering directory '/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-38kqGL']
+        ignore line: [Building C object CMakeFiles/cmTC_9cef2.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/run/current-system/sw/bin/cc   -std=gnu11   -v -MD -MT CMakeFiles/cmTC_9cef2.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_9cef2.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_9cef2.dir/CMakeCCompilerABI.c.o -c /run/current-system/sw/share/cmake-4.1/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang version 21.1.8]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /nix/store/wcwr4iq7c8f4ygn8bd1q0k3i51lmhz35-clang-21.1.8/bin]
+        ignore line: [Found candidate GCC installation: /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0]
+        ignore line: [Selected GCC installation: /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/nix/store/wcwr4iq7c8f4ygn8bd1q0k3i51lmhz35-clang-21.1.8/bin/clang-21" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-38kqGL -v -fcoverage-compilation-dir=/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-38kqGL -nostdsysteminc -resource-dir /nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root -dependency-file CMakeFiles/cmTC_9cef2.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_9cef2.dir/CMakeCCompilerABI.c.o -sys-header-deps -idirafter /nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include -cxx-isystem /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0 -cxx-isystem /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0/x86_64-unknown-linux-gnu -internal-isystem /nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root/include -fmacro-prefix-map=/nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.42-61-dev/include -fmacro-prefix-map=/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-15.2.0/include/c++/15.2.0 -fmacro-prefix-map=/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0/x86_64-unknown-linux-gnu=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-15.2.0/include/c++/15.2.0/x86_64-unknown-linux-gnu -std=gnu11 -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_9cef2.dir/CMakeCCompilerABI.c.o -x c /run/current-system/sw/share/cmake-4.1/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target x86_64-unknown-linux-gnu]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root/include]
+        ignore line: [ /nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_9cef2]
+        ignore line: [/run/current-system/sw/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9cef2.dir/link.txt --verbose=1]
+        ignore line: [clang version 21.1.8]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /nix/store/wcwr4iq7c8f4ygn8bd1q0k3i51lmhz35-clang-21.1.8/bin]
+        ignore line: [Found candidate GCC installation: /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0]
+        ignore line: [Selected GCC installation: /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/nix/store/drxcv33qq9ava7gdpik5xs9q2wfnhdb0-binutils-wrapper-2.46/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -pie -o cmTC_9cef2 /nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/Scrt1.o /nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crti.o /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtbeginS.o -L/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib -L/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0 -L/nix/store/chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib/lib -L/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0//lib -L/nix/store/xyikkpwkyxx6syba3kfrr0h67ig5hwmn-gcc-15.2.0-libgcc/lib -L/nix/store/jdgw7h0g0l8clmcasaspxnx6v62jz1il-clang-21.1.8-lib/lib -L/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0 -dynamic-linker=/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/ld-linux-x86-64.so.2 -v CMakeFiles/cmTC_9cef2.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtendS.o /nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crtn.o]
+          arg [/nix/store/drxcv33qq9ava7gdpik5xs9q2wfnhdb0-binutils-wrapper-2.46/bin/ld] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_9cef2] ==> ignore
+          arg [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/Scrt1.o] ==> obj [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/Scrt1.o]
+          arg [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crti.o] ==> obj [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crti.o]
+          arg [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtbeginS.o] ==> obj [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtbeginS.o]
+          arg [-L/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib] ==> dir [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib]
+          arg [-L/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0] ==> dir [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0]
+          arg [-L/nix/store/chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib/lib] ==> dir [/nix/store/chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib/lib]
+          arg [-L/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0//lib] ==> dir [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0//lib]
+          arg [-L/nix/store/xyikkpwkyxx6syba3kfrr0h67ig5hwmn-gcc-15.2.0-libgcc/lib] ==> dir [/nix/store/xyikkpwkyxx6syba3kfrr0h67ig5hwmn-gcc-15.2.0-libgcc/lib]
+          arg [-L/nix/store/jdgw7h0g0l8clmcasaspxnx6v62jz1il-clang-21.1.8-lib/lib] ==> dir [/nix/store/jdgw7h0g0l8clmcasaspxnx6v62jz1il-clang-21.1.8-lib/lib]
+          arg [-L/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0] ==> dir [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0]
+          arg [-dynamic-linker=/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/ld-linux-x86-64.so.2] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_9cef2.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtendS.o] ==> obj [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtendS.o]
+          arg [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crtn.o] ==> obj [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crtn.o]
+        linker tool for 'C': /nix/store/drxcv33qq9ava7gdpik5xs9q2wfnhdb0-binutils-wrapper-2.46/bin/ld
+        collapse library dir [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib] ==> [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib]
+        collapse library dir [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0] ==> [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0]
+        collapse library dir [/nix/store/chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib/lib] ==> [/nix/store/chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib/lib]
+        collapse library dir [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0//lib] ==> [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib]
+        collapse library dir [/nix/store/xyikkpwkyxx6syba3kfrr0h67ig5hwmn-gcc-15.2.0-libgcc/lib] ==> [/nix/store/xyikkpwkyxx6syba3kfrr0h67ig5hwmn-gcc-15.2.0-libgcc/lib]
+        collapse library dir [/nix/store/jdgw7h0g0l8clmcasaspxnx6v62jz1il-clang-21.1.8-lib/lib] ==> [/nix/store/jdgw7h0g0l8clmcasaspxnx6v62jz1il-clang-21.1.8-lib/lib]
+        collapse library dir [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0] ==> [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/Scrt1.o;/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crti.o;/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtbeginS.o;/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtendS.o;/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crtn.o]
+        implicit dirs: [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib;/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0;/nix/store/chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib/lib;/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib;/nix/store/xyikkpwkyxx6syba3kfrr0h67ig5hwmn-gcc-15.2.0-libgcc/lib;/nix/store/jdgw7h0g0l8clmcasaspxnx6v62jz1il-clang-21.1.8-lib/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Running the C compiler's linker: "/nix/store/drxcv33qq9ava7gdpik5xs9q2wfnhdb0-binutils-wrapper-2.46/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.46
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-YCONDa"
+      binary: "/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-YCONDa"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-YCONDa'
+        
+        Run Build Command(s): /run/current-system/sw/bin/cmake -E env VERBOSE=1 /run/current-system/sw/bin/make -f Makefile cmTC_0cb15/fast
+        /run/current-system/sw/bin/make  -f CMakeFiles/cmTC_0cb15.dir/build.make CMakeFiles/cmTC_0cb15.dir/build
+        make[1]: Entering directory '/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-YCONDa'
+        Building CXX object CMakeFiles/cmTC_0cb15.dir/CMakeCXXCompilerABI.cpp.o
+        /run/current-system/sw/bin/c++   -v -MD -MT CMakeFiles/cmTC_0cb15.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_0cb15.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_0cb15.dir/CMakeCXXCompilerABI.cpp.o -c /run/current-system/sw/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp
+        clang version 21.1.8
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /nix/store/wcwr4iq7c8f4ygn8bd1q0k3i51lmhz35-clang-21.1.8/bin
+        Found candidate GCC installation: /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0
+        Selected GCC installation: /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/nix/store/wcwr4iq7c8f4ygn8bd1q0k3i51lmhz35-clang-21.1.8/bin/clang++" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-YCONDa -v -fcoverage-compilation-dir=/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-YCONDa -nostdsysteminc -resource-dir /nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root -dependency-file CMakeFiles/cmTC_0cb15.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_0cb15.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -idirafter /nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include -cxx-isystem /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0 -cxx-isystem /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0/x86_64-unknown-linux-gnu -internal-isystem /nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root/include -fmacro-prefix-map=/nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.42-61-dev/include -fmacro-prefix-map=/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-15.2.0/include/c++/15.2.0 -fmacro-prefix-map=/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0/x86_64-unknown-linux-gnu=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-15.2.0/include/c++/15.2.0/x86_64-unknown-linux-gnu -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_0cb15.dir/CMakeCXXCompilerABI.cpp.o -x c++ /run/current-system/sw/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target x86_64-unknown-linux-gnu
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0
+         /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0/x86_64-unknown-linux-gnu
+         /nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root/include
+         /nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include
+        End of search list.
+        Linking CXX executable cmTC_0cb15
+        /run/current-system/sw/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0cb15.dir/link.txt --verbose=1
+        clang version 21.1.8
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /nix/store/wcwr4iq7c8f4ygn8bd1q0k3i51lmhz35-clang-21.1.8/bin
+        Found candidate GCC installation: /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0
+        Selected GCC installation: /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/nix/store/drxcv33qq9ava7gdpik5xs9q2wfnhdb0-binutils-wrapper-2.46/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -pie -o cmTC_0cb15 /nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/Scrt1.o /nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crti.o /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtbeginS.o -L/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib -L/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0 -L/nix/store/chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib/lib -L/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0//lib -L/nix/store/xyikkpwkyxx6syba3kfrr0h67ig5hwmn-gcc-15.2.0-libgcc/lib -L/nix/store/jdgw7h0g0l8clmcasaspxnx6v62jz1il-clang-21.1.8-lib/lib -L/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0 -dynamic-linker=/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/ld-linux-x86-64.so.2 -v CMakeFiles/cmTC_0cb15.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtendS.o /nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crtn.o
+        GNU ld (GNU Binutils) 2.46
+        /run/current-system/sw/bin/c++  -v -Wl,-v CMakeFiles/cmTC_0cb15.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0cb15
+        make[1]: Leaving directory '/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-YCONDa'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0]
+          add: [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0/x86_64-unknown-linux-gnu]
+          add: [/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root/include]
+          add: [/nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include]
+        end of search list found
+        collapse include dir [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0] ==> [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0]
+        collapse include dir [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0/x86_64-unknown-linux-gnu] ==> [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0/x86_64-unknown-linux-gnu]
+        collapse include dir [/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root/include] ==> [/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root/include]
+        collapse include dir [/nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include] ==> [/nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include]
+        implicit include dirs: [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0;/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0/x86_64-unknown-linux-gnu;/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root/include;/nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-YCONDa']
+        ignore line: []
+        ignore line: [Run Build Command(s): /run/current-system/sw/bin/cmake -E env VERBOSE=1 /run/current-system/sw/bin/make -f Makefile cmTC_0cb15/fast]
+        ignore line: [/run/current-system/sw/bin/make  -f CMakeFiles/cmTC_0cb15.dir/build.make CMakeFiles/cmTC_0cb15.dir/build]
+        ignore line: [make[1]: Entering directory '/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-YCONDa']
+        ignore line: [Building CXX object CMakeFiles/cmTC_0cb15.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/run/current-system/sw/bin/c++   -v -MD -MT CMakeFiles/cmTC_0cb15.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_0cb15.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_0cb15.dir/CMakeCXXCompilerABI.cpp.o -c /run/current-system/sw/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang version 21.1.8]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /nix/store/wcwr4iq7c8f4ygn8bd1q0k3i51lmhz35-clang-21.1.8/bin]
+        ignore line: [Found candidate GCC installation: /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0]
+        ignore line: [Selected GCC installation: /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/nix/store/wcwr4iq7c8f4ygn8bd1q0k3i51lmhz35-clang-21.1.8/bin/clang++" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-YCONDa -v -fcoverage-compilation-dir=/home/kaman/Projects/stm/rx/CMakeFiles/CMakeScratch/TryCompile-YCONDa -nostdsysteminc -resource-dir /nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root -dependency-file CMakeFiles/cmTC_0cb15.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_0cb15.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -idirafter /nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include -cxx-isystem /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0 -cxx-isystem /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0/x86_64-unknown-linux-gnu -internal-isystem /nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root/include -fmacro-prefix-map=/nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.42-61-dev/include -fmacro-prefix-map=/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-15.2.0/include/c++/15.2.0 -fmacro-prefix-map=/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0/x86_64-unknown-linux-gnu=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-15.2.0/include/c++/15.2.0/x86_64-unknown-linux-gnu -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_0cb15.dir/CMakeCXXCompilerABI.cpp.o -x c++ /run/current-system/sw/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target x86_64-unknown-linux-gnu]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0]
+        ignore line: [ /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/include/c++/15.2.0/x86_64-unknown-linux-gnu]
+        ignore line: [ /nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/resource-root/include]
+        ignore line: [ /nix/store/15h9askp4k1lx44d9871wid23j2a8ijp-glibc-2.42-61-dev/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_0cb15]
+        ignore line: [/run/current-system/sw/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0cb15.dir/link.txt --verbose=1]
+        ignore line: [clang version 21.1.8]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /nix/store/wcwr4iq7c8f4ygn8bd1q0k3i51lmhz35-clang-21.1.8/bin]
+        ignore line: [Found candidate GCC installation: /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0]
+        ignore line: [Selected GCC installation: /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/nix/store/drxcv33qq9ava7gdpik5xs9q2wfnhdb0-binutils-wrapper-2.46/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -pie -o cmTC_0cb15 /nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/Scrt1.o /nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crti.o /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtbeginS.o -L/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib -L/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0 -L/nix/store/chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib/lib -L/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0//lib -L/nix/store/xyikkpwkyxx6syba3kfrr0h67ig5hwmn-gcc-15.2.0-libgcc/lib -L/nix/store/jdgw7h0g0l8clmcasaspxnx6v62jz1il-clang-21.1.8-lib/lib -L/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0 -dynamic-linker=/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/ld-linux-x86-64.so.2 -v CMakeFiles/cmTC_0cb15.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtendS.o /nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crtn.o]
+          arg [/nix/store/drxcv33qq9ava7gdpik5xs9q2wfnhdb0-binutils-wrapper-2.46/bin/ld] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_0cb15] ==> ignore
+          arg [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/Scrt1.o] ==> obj [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/Scrt1.o]
+          arg [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crti.o] ==> obj [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crti.o]
+          arg [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtbeginS.o] ==> obj [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtbeginS.o]
+          arg [-L/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib] ==> dir [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib]
+          arg [-L/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0] ==> dir [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0]
+          arg [-L/nix/store/chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib/lib] ==> dir [/nix/store/chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib/lib]
+          arg [-L/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0//lib] ==> dir [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0//lib]
+          arg [-L/nix/store/xyikkpwkyxx6syba3kfrr0h67ig5hwmn-gcc-15.2.0-libgcc/lib] ==> dir [/nix/store/xyikkpwkyxx6syba3kfrr0h67ig5hwmn-gcc-15.2.0-libgcc/lib]
+          arg [-L/nix/store/jdgw7h0g0l8clmcasaspxnx6v62jz1il-clang-21.1.8-lib/lib] ==> dir [/nix/store/jdgw7h0g0l8clmcasaspxnx6v62jz1il-clang-21.1.8-lib/lib]
+          arg [-L/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0] ==> dir [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0]
+          arg [-dynamic-linker=/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/ld-linux-x86-64.so.2] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_0cb15.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtendS.o] ==> obj [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtendS.o]
+          arg [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crtn.o] ==> obj [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crtn.o]
+        linker tool for 'CXX': /nix/store/drxcv33qq9ava7gdpik5xs9q2wfnhdb0-binutils-wrapper-2.46/bin/ld
+        collapse library dir [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib] ==> [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib]
+        collapse library dir [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0] ==> [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0]
+        collapse library dir [/nix/store/chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib/lib] ==> [/nix/store/chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib/lib]
+        collapse library dir [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0//lib] ==> [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib]
+        collapse library dir [/nix/store/xyikkpwkyxx6syba3kfrr0h67ig5hwmn-gcc-15.2.0-libgcc/lib] ==> [/nix/store/xyikkpwkyxx6syba3kfrr0h67ig5hwmn-gcc-15.2.0-libgcc/lib]
+        collapse library dir [/nix/store/jdgw7h0g0l8clmcasaspxnx6v62jz1il-clang-21.1.8-lib/lib] ==> [/nix/store/jdgw7h0g0l8clmcasaspxnx6v62jz1il-clang-21.1.8-lib/lib]
+        collapse library dir [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0] ==> [/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/Scrt1.o;/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crti.o;/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtbeginS.o;/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtendS.o;/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib/crtn.o]
+        implicit dirs: [/nix/store/57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61/lib;/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0;/nix/store/chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib/lib;/nix/store/qxaq7jz61a6zkr2mq49i0zvqip2m2jj8-gcc-15.2.0/lib;/nix/store/xyikkpwkyxx6syba3kfrr0h67ig5hwmn-gcc-15.2.0-libgcc/lib;/nix/store/jdgw7h0g0l8clmcasaspxnx6v62jz1il-clang-21.1.8-lib/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Running the CXX compiler's linker: "/nix/store/drxcv33qq9ava7gdpik5xs9q2wfnhdb0-binutils-wrapper-2.46/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.46
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:61 (_cmake_find_compiler)"
+      - "CMakeLists.txt:32 (enable_language)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER"
+    description: "ASM compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/run/current-system/sw/bin/cc"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+    found: "/run/current-system/sw/bin/cc"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/run/current-system/sw"
+        - "/usr/local"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:32 (enable_language)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      clang version 21.1.8
+      Target: x86_64-unknown-linux-gnu
+      Thread model: posix
+      InstalledDir: /nix/store/wcwr4iq7c8f4ygn8bd1q0k3i51lmhz35-clang-21.1.8/bin
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:32 (enable_language)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+      clang version 21.1.8
+      Target: x86_64-unknown-linux-gnu
+      Thread model: posix
+      InstalledDir: /nix/store/wcwr4iq7c8f4ygn8bd1q0k3i51lmhz35-clang-21.1.8/bin
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1290 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:32 (enable_language)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" matched "(clang version)":
+      clang version 21.1.8
+      Target: x86_64-unknown-linux-gnu
+      Thread model: posix
+      InstalledDir: /nix/store/wcwr4iq7c8f4ygn8bd1q0k3i51lmhz35-clang-21.1.8/bin
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Compiler/Clang-FindBinUtils.cmake:26 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
+      - "CMakeLists.txt:32 (enable_language)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_AR"
+    description: "LLVM archiver"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ar-"
+      - "llvm-ar-"
+      - "llvm-ar"
+      - "llvm-ar"
+    candidate_directories:
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/run/current-system/sw/sbin/"
+      - "/run/current-system/sw/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+    searched_directories:
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ar-"
+      - "/run/current-system/sw/bin/llvm-ar-"
+      - "/run/wrappers/bin/llvm-ar-"
+      - "/home/kaman/.nix-profile/bin/llvm-ar-"
+      - "/nix/profile/bin/llvm-ar-"
+      - "/home/kaman/.local/state/nix/profile/bin/llvm-ar-"
+      - "/etc/profiles/per-user/kaman/bin/llvm-ar-"
+      - "/nix/var/nix/profiles/default/bin/llvm-ar-"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/llvm-ar-"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/llvm-ar-"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/llvm-ar-"
+      - "/run/current-system/sw/bin/llvm-ar-"
+      - "/run/current-system/sw/sbin/llvm-ar-"
+      - "/run/current-system/sw/llvm-ar-"
+      - "/usr/local/bin/llvm-ar-"
+      - "/usr/local/sbin/llvm-ar-"
+      - "/usr/local/llvm-ar-"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ar-"
+      - "/run/current-system/sw/bin/llvm-ar-"
+      - "/run/wrappers/bin/llvm-ar-"
+      - "/home/kaman/.nix-profile/bin/llvm-ar-"
+      - "/nix/profile/bin/llvm-ar-"
+      - "/home/kaman/.local/state/nix/profile/bin/llvm-ar-"
+      - "/etc/profiles/per-user/kaman/bin/llvm-ar-"
+      - "/nix/var/nix/profiles/default/bin/llvm-ar-"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/llvm-ar-"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/llvm-ar-"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/llvm-ar-"
+      - "/run/current-system/sw/bin/llvm-ar-"
+      - "/run/current-system/sw/sbin/llvm-ar-"
+      - "/run/current-system/sw/llvm-ar-"
+      - "/usr/local/bin/llvm-ar-"
+      - "/usr/local/sbin/llvm-ar-"
+      - "/usr/local/llvm-ar-"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ar"
+    found: "/run/current-system/sw/bin/llvm-ar"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/run/current-system/sw"
+        - "/usr/local"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Compiler/Clang-FindBinUtils.cmake:38 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
+      - "CMakeLists.txt:32 (enable_language)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_RANLIB"
+    description: "Generate index for LLVM archive"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ranlib-"
+      - "llvm-ranlib-"
+      - "llvm-ranlib"
+      - "llvm-ranlib"
+    candidate_directories:
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/run/current-system/sw/sbin/"
+      - "/run/current-system/sw/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+    searched_directories:
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ranlib-"
+      - "/run/current-system/sw/bin/llvm-ranlib-"
+      - "/run/wrappers/bin/llvm-ranlib-"
+      - "/home/kaman/.nix-profile/bin/llvm-ranlib-"
+      - "/nix/profile/bin/llvm-ranlib-"
+      - "/home/kaman/.local/state/nix/profile/bin/llvm-ranlib-"
+      - "/etc/profiles/per-user/kaman/bin/llvm-ranlib-"
+      - "/nix/var/nix/profiles/default/bin/llvm-ranlib-"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/llvm-ranlib-"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/llvm-ranlib-"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/llvm-ranlib-"
+      - "/run/current-system/sw/bin/llvm-ranlib-"
+      - "/run/current-system/sw/sbin/llvm-ranlib-"
+      - "/run/current-system/sw/llvm-ranlib-"
+      - "/usr/local/bin/llvm-ranlib-"
+      - "/usr/local/sbin/llvm-ranlib-"
+      - "/usr/local/llvm-ranlib-"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ranlib-"
+      - "/run/current-system/sw/bin/llvm-ranlib-"
+      - "/run/wrappers/bin/llvm-ranlib-"
+      - "/home/kaman/.nix-profile/bin/llvm-ranlib-"
+      - "/nix/profile/bin/llvm-ranlib-"
+      - "/home/kaman/.local/state/nix/profile/bin/llvm-ranlib-"
+      - "/etc/profiles/per-user/kaman/bin/llvm-ranlib-"
+      - "/nix/var/nix/profiles/default/bin/llvm-ranlib-"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/llvm-ranlib-"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/llvm-ranlib-"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/llvm-ranlib-"
+      - "/run/current-system/sw/bin/llvm-ranlib-"
+      - "/run/current-system/sw/sbin/llvm-ranlib-"
+      - "/run/current-system/sw/llvm-ranlib-"
+      - "/usr/local/bin/llvm-ranlib-"
+      - "/usr/local/sbin/llvm-ranlib-"
+      - "/usr/local/llvm-ranlib-"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/llvm-ranlib"
+    found: "/run/current-system/sw/bin/llvm-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/run/current-system/sw"
+        - "/usr/local"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Compiler/Clang-FindBinUtils.cmake:50 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
+      - "CMakeLists.txt:32 (enable_language)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_CLANG_SCAN_DEPS"
+    description: "`clang-scan-deps` dependency scanner"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "clang-scan-deps-"
+      - "clang-scan-deps-"
+      - "clang-scan-deps"
+      - "clang-scan-deps"
+    candidate_directories:
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/run/current-system/sw/sbin/"
+      - "/run/current-system/sw/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+    searched_directories:
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/clang-scan-deps-"
+      - "/run/current-system/sw/bin/clang-scan-deps-"
+      - "/run/wrappers/bin/clang-scan-deps-"
+      - "/home/kaman/.nix-profile/bin/clang-scan-deps-"
+      - "/nix/profile/bin/clang-scan-deps-"
+      - "/home/kaman/.local/state/nix/profile/bin/clang-scan-deps-"
+      - "/etc/profiles/per-user/kaman/bin/clang-scan-deps-"
+      - "/nix/var/nix/profiles/default/bin/clang-scan-deps-"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/clang-scan-deps-"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/clang-scan-deps-"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/clang-scan-deps-"
+      - "/run/current-system/sw/bin/clang-scan-deps-"
+      - "/run/current-system/sw/sbin/clang-scan-deps-"
+      - "/run/current-system/sw/clang-scan-deps-"
+      - "/usr/local/bin/clang-scan-deps-"
+      - "/usr/local/sbin/clang-scan-deps-"
+      - "/usr/local/clang-scan-deps-"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/clang-scan-deps-"
+      - "/run/current-system/sw/bin/clang-scan-deps-"
+      - "/run/wrappers/bin/clang-scan-deps-"
+      - "/home/kaman/.nix-profile/bin/clang-scan-deps-"
+      - "/nix/profile/bin/clang-scan-deps-"
+      - "/home/kaman/.local/state/nix/profile/bin/clang-scan-deps-"
+      - "/etc/profiles/per-user/kaman/bin/clang-scan-deps-"
+      - "/nix/var/nix/profiles/default/bin/clang-scan-deps-"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/clang-scan-deps-"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/clang-scan-deps-"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/clang-scan-deps-"
+      - "/run/current-system/sw/bin/clang-scan-deps-"
+      - "/run/current-system/sw/sbin/clang-scan-deps-"
+      - "/run/current-system/sw/clang-scan-deps-"
+      - "/usr/local/bin/clang-scan-deps-"
+      - "/usr/local/sbin/clang-scan-deps-"
+      - "/usr/local/clang-scan-deps-"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/clang-scan-deps"
+      - "/run/current-system/sw/bin/clang-scan-deps"
+      - "/run/wrappers/bin/clang-scan-deps"
+      - "/home/kaman/.nix-profile/bin/clang-scan-deps"
+      - "/nix/profile/bin/clang-scan-deps"
+      - "/home/kaman/.local/state/nix/profile/bin/clang-scan-deps"
+      - "/etc/profiles/per-user/kaman/bin/clang-scan-deps"
+      - "/nix/var/nix/profiles/default/bin/clang-scan-deps"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/clang-scan-deps"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/clang-scan-deps"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/clang-scan-deps"
+      - "/run/current-system/sw/bin/clang-scan-deps"
+      - "/run/current-system/sw/sbin/clang-scan-deps"
+      - "/run/current-system/sw/clang-scan-deps"
+      - "/usr/local/bin/clang-scan-deps"
+      - "/usr/local/sbin/clang-scan-deps"
+      - "/usr/local/clang-scan-deps"
+      - "/nix/store/874j5xydsj6nr6i1zdrjvhln5gmxvvrr-clang-wrapper-21.1.8/bin/clang-scan-deps"
+      - "/run/current-system/sw/bin/clang-scan-deps"
+      - "/run/wrappers/bin/clang-scan-deps"
+      - "/home/kaman/.nix-profile/bin/clang-scan-deps"
+      - "/nix/profile/bin/clang-scan-deps"
+      - "/home/kaman/.local/state/nix/profile/bin/clang-scan-deps"
+      - "/etc/profiles/per-user/kaman/bin/clang-scan-deps"
+      - "/nix/var/nix/profiles/default/bin/clang-scan-deps"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/clang-scan-deps"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/clang-scan-deps"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/clang-scan-deps"
+      - "/run/current-system/sw/bin/clang-scan-deps"
+      - "/run/current-system/sw/sbin/clang-scan-deps"
+      - "/run/current-system/sw/clang-scan-deps"
+      - "/usr/local/bin/clang-scan-deps"
+      - "/usr/local/sbin/clang-scan-deps"
+      - "/usr/local/clang-scan-deps"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/run/current-system/sw"
+        - "/usr/local"
+...

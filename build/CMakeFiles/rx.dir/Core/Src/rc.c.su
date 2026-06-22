@@ -1,0 +1,7 @@
+/home/kaman/Projects/stm/rx/Core/Src/rc.c:28:19:ch_index	16	static
+/home/kaman/Projects/stm/rx/Core/Src/rc.c:44:6:HAL_GPIO_EXTI_Callback	24	static
+/home/kaman/Projects/stm/rx/Core/Src/rc.c:62:13:RC_ProcessChannels	24	static
+/home/kaman/Projects/stm/rx/Core/Src/rc.c:84:13:RC_UpdateLEDs	16	static
+/home/kaman/Projects/stm/rx/Core/Src/rc.c:92:7:RCInput_GetPosPct	16	static
+/home/kaman/Projects/stm/rx/Core/Src/rc.c:98:13:StartRCTask	16	static
+/home/kaman/Projects/stm/rx/Core/Src/rc.c:110:6:RCInput_Init	8	static

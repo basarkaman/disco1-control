@@ -1,0 +1,1839 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/run/wrappers/bin/uname"
+      - "/home/kaman/.nix-profile/bin/uname"
+      - "/nix/profile/bin/uname"
+      - "/home/kaman/.local/state/nix/profile/bin/uname"
+      - "/etc/profiles/per-user/kaman/bin/uname"
+      - "/nix/var/nix/profiles/default/bin/uname"
+    found: "/run/current-system/sw/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:207 (message)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      The target system is: Generic -  - arm
+      The host system is: Linux - 7.1.0 - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/run/wrappers/bin/gmake"
+      - "/home/kaman/.nix-profile/bin/gmake"
+      - "/nix/profile/bin/gmake"
+      - "/home/kaman/.local/state/nix/profile/bin/gmake"
+      - "/etc/profiles/per-user/kaman/bin/gmake"
+      - "/nix/var/nix/profiles/default/bin/gmake"
+      - "/run/current-system/sw/bin/gmake"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/gmake"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/gmake"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/gmake"
+      - "/run/wrappers/bin/make"
+      - "/home/kaman/.nix-profile/bin/make"
+      - "/nix/profile/bin/make"
+      - "/home/kaman/.local/state/nix/profile/bin/make"
+      - "/etc/profiles/per-user/kaman/bin/make"
+      - "/nix/var/nix/profiles/default/bin/make"
+    found: "/run/current-system/sw/bin/make"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:67 (_cmake_find_compiler_path)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-gcc"
+    candidate_directories:
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/run/wrappers/bin/arm-none-eabi-gcc"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-gcc"
+      - "/nix/profile/bin/arm-none-eabi-gcc"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-gcc"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-gcc"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc"
+    found: "/run/current-system/sw/bin/arm-none-eabi-gcc"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/"
+    found: "/run/current-system/sw/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /run/current-system/sw/bin/arm-none-eabi-gcc 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage
+      Id flags:  
+      
+      The output was:
+      1
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x14): undefined reference to `_exit'
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: (_exit): Unknown destination type (ARM/Thumb) in /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-exit.o)
+      exit.c:(.text.exit+0x14): dangerous relocation: unsupported relocation
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-closer.o): in function `_close_r':
+      closer.c:(.text._close_r+0xc): undefined reference to `_close'
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: (_close): Unknown destination type (ARM/Thumb) in /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-closer.o)
+      closer.c:(.text._close_r+0xc): dangerous relocation: unsupported relocation
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      lseekr.c:(.text._lseek_r+0x12): undefined reference to `_lseek'
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: (_lseek): Unknown destination type (ARM/Thumb) in /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lseekr.o)
+      lseekr.c:(.text._lseek_r+0x12): dangerous relocation: unsupported relocation
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-readr.o): in function `_read_r':
+      readr.c:(.text._read_r+0x12): undefined reference to `_read'
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: (_read): Unknown destination type (ARM/Thumb) in /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-readr.o)
+      readr.c:(.text._read_r+0x12): dangerous relocation: unsupported relocation
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-writer.o): in function `_write_r':
+      writer.c:(.text._write_r+0x12): undefined reference to `_write'
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: (_write): Unknown destination type (ARM/Thumb) in /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-writer.o)
+      writer.c:(.text._write_r+0x12): dangerous relocation: unsupported relocation
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      sbrkr.c:(.text._sbrk_r+0xc): undefined reference to `_sbrk'
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: (_sbrk): Unknown destination type (ARM/Thumb) in /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sbrkr.o)
+      sbrkr.c:(.text._sbrk_r+0xc): dangerous relocation: unsupported relocation
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/"
+    found: "/run/current-system/sw/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /run/current-system/sw/bin/arm-none-eabi-gcc 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.su"
+      
+      The C compiler identification is GNU, found in:
+        /home/kaman/Projects/stm/rx/build/CMakeFiles/4.1.2/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:58 (__resolve_tool_path)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-g++"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    found: "/run/current-system/sw/bin/arm-none-eabi-g++"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-ar"
+      - "ar"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    found: "/run/current-system/sw/bin/arm-none-eabi-ar"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-ranlib"
+      - "ranlib"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    found: "/run/current-system/sw/bin/arm-none-eabi-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-strip"
+      - "strip"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    found: "/run/current-system/sw/bin/arm-none-eabi-strip"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-nm"
+      - "nm"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    found: "/run/current-system/sw/bin/arm-none-eabi-nm"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-objdump"
+      - "objdump"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    found: "/run/current-system/sw/bin/arm-none-eabi-objdump"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-readelf"
+      - "readelf"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    found: "/run/current-system/sw/bin/arm-none-eabi-readelf"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-dlltool"
+      - "dlltool"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/run/current-system/sw/bin/arm-none-eabi-dlltool"
+      - "/run/wrappers/bin/arm-none-eabi-dlltool"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-dlltool"
+      - "/nix/profile/bin/arm-none-eabi-dlltool"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-dlltool"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-dlltool"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-dlltool"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/arm-none-eabi-dlltool"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/arm-none-eabi-dlltool"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/arm-none-eabi-dlltool"
+      - "/run/current-system/sw/bin/dlltool"
+      - "/run/wrappers/bin/dlltool"
+      - "/home/kaman/.nix-profile/bin/dlltool"
+      - "/nix/profile/bin/dlltool"
+      - "/home/kaman/.local/state/nix/profile/bin/dlltool"
+      - "/etc/profiles/per-user/kaman/bin/dlltool"
+      - "/nix/var/nix/profiles/default/bin/dlltool"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/dlltool"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/dlltool"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/dlltool"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-addr2line"
+      - "addr2line"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    found: "/run/current-system/sw/bin/arm-none-eabi-addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-tapi"
+      - "tapi"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/run/current-system/sw/bin/arm-none-eabi-tapi"
+      - "/run/wrappers/bin/arm-none-eabi-tapi"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-tapi"
+      - "/nix/profile/bin/arm-none-eabi-tapi"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-tapi"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-tapi"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-tapi"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/arm-none-eabi-tapi"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/arm-none-eabi-tapi"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/arm-none-eabi-tapi"
+      - "/run/current-system/sw/bin/tapi"
+      - "/run/wrappers/bin/tapi"
+      - "/home/kaman/.nix-profile/bin/tapi"
+      - "/nix/profile/bin/tapi"
+      - "/home/kaman/.local/state/nix/profile/bin/tapi"
+      - "/etc/profiles/per-user/kaman/bin/tapi"
+      - "/nix/var/nix/profiles/default/bin/tapi"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/tapi"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/tapi"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-gcc-ar-15.2"
+      - "arm-none-eabi-gcc-ar-15"
+      - "arm-none-eabi-gcc-ar15"
+      - "arm-none-eabi-gcc-ar"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/run/current-system/sw/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/run/wrappers/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/nix/profile/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/run/current-system/sw/bin/arm-none-eabi-gcc-ar-15"
+      - "/run/wrappers/bin/arm-none-eabi-gcc-ar-15"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-gcc-ar-15"
+      - "/nix/profile/bin/arm-none-eabi-gcc-ar-15"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-gcc-ar-15"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-gcc-ar-15"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ar-15"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/arm-none-eabi-gcc-ar-15"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/arm-none-eabi-gcc-ar-15"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/arm-none-eabi-gcc-ar-15"
+      - "/run/current-system/sw/bin/arm-none-eabi-gcc-ar15"
+      - "/run/wrappers/bin/arm-none-eabi-gcc-ar15"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-gcc-ar15"
+      - "/nix/profile/bin/arm-none-eabi-gcc-ar15"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-gcc-ar15"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-gcc-ar15"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ar15"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/arm-none-eabi-gcc-ar15"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/arm-none-eabi-gcc-ar15"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/arm-none-eabi-gcc-ar15"
+    found: "/run/current-system/sw/bin/arm-none-eabi-gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-gcc-ranlib-15.2"
+      - "arm-none-eabi-gcc-ranlib-15"
+      - "arm-none-eabi-gcc-ranlib15"
+      - "arm-none-eabi-gcc-ranlib"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/run/current-system/sw/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/run/wrappers/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/nix/profile/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/run/current-system/sw/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/run/wrappers/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/nix/profile/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/run/current-system/sw/bin/arm-none-eabi-gcc-ranlib15"
+      - "/run/wrappers/bin/arm-none-eabi-gcc-ranlib15"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-gcc-ranlib15"
+      - "/nix/profile/bin/arm-none-eabi-gcc-ranlib15"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-gcc-ranlib15"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-gcc-ranlib15"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ranlib15"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/arm-none-eabi-gcc-ranlib15"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/arm-none-eabi-gcc-ranlib15"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/arm-none-eabi-gcc-ranlib15"
+    found: "/run/current-system/sw/bin/arm-none-eabi-gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:71 (_cmake_find_compiler_path)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-g++"
+    candidate_directories:
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/run/wrappers/bin/arm-none-eabi-g++"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-g++"
+      - "/nix/profile/bin/arm-none-eabi-g++"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-g++"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-g++"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-g++"
+    found: "/run/current-system/sw/bin/arm-none-eabi-g++"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/"
+    found: "/run/current-system/sw/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /run/current-system/sw/bin/arm-none-eabi-g++ 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Id flags:  
+      
+      The output was:
+      1
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x14): undefined reference to `_exit'
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: (_exit): Unknown destination type (ARM/Thumb) in /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-exit.o)
+      exit.c:(.text.exit+0x14): dangerous relocation: unsupported relocation
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-closer.o): in function `_close_r':
+      closer.c:(.text._close_r+0xc): undefined reference to `_close'
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: (_close): Unknown destination type (ARM/Thumb) in /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-closer.o)
+      closer.c:(.text._close_r+0xc): dangerous relocation: unsupported relocation
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      lseekr.c:(.text._lseek_r+0x12): undefined reference to `_lseek'
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: (_lseek): Unknown destination type (ARM/Thumb) in /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lseekr.o)
+      lseekr.c:(.text._lseek_r+0x12): dangerous relocation: unsupported relocation
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-readr.o): in function `_read_r':
+      readr.c:(.text._read_r+0x12): undefined reference to `_read'
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: (_read): Unknown destination type (ARM/Thumb) in /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-readr.o)
+      readr.c:(.text._read_r+0x12): dangerous relocation: unsupported relocation
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-writer.o): in function `_write_r':
+      writer.c:(.text._write_r+0x12): undefined reference to `_write'
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: (_write): Unknown destination type (ARM/Thumb) in /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-writer.o)
+      writer.c:(.text._write_r+0x12): dangerous relocation: unsupported relocation
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      sbrkr.c:(.text._sbrk_r+0xc): undefined reference to `_sbrk'
+      /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: (_sbrk): Unknown destination type (ARM/Thumb) in /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sbrkr.o)
+      sbrkr.c:(.text._sbrk_r+0xc): dangerous relocation: unsupported relocation
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/"
+    found: "/run/current-system/sw/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /run/current-system/sw/bin/arm-none-eabi-g++ 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.su"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/kaman/Projects/stm/rx/build/CMakeFiles/4.1.2/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-gcc-ar-15.2"
+      - "arm-none-eabi-gcc-ar-15"
+      - "arm-none-eabi-gcc-ar15"
+      - "arm-none-eabi-gcc-ar"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/run/current-system/sw/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/run/wrappers/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/nix/profile/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/run/current-system/sw/bin/arm-none-eabi-gcc-ar-15"
+      - "/run/wrappers/bin/arm-none-eabi-gcc-ar-15"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-gcc-ar-15"
+      - "/nix/profile/bin/arm-none-eabi-gcc-ar-15"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-gcc-ar-15"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-gcc-ar-15"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ar-15"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/arm-none-eabi-gcc-ar-15"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/arm-none-eabi-gcc-ar-15"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/arm-none-eabi-gcc-ar-15"
+      - "/run/current-system/sw/bin/arm-none-eabi-gcc-ar15"
+      - "/run/wrappers/bin/arm-none-eabi-gcc-ar15"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-gcc-ar15"
+      - "/nix/profile/bin/arm-none-eabi-gcc-ar15"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-gcc-ar15"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-gcc-ar15"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ar15"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/arm-none-eabi-gcc-ar15"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/arm-none-eabi-gcc-ar15"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/arm-none-eabi-gcc-ar15"
+    found: "/run/current-system/sw/bin/arm-none-eabi-gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-gcc-ranlib-15.2"
+      - "arm-none-eabi-gcc-ranlib-15"
+      - "arm-none-eabi-gcc-ranlib15"
+      - "arm-none-eabi-gcc-ranlib"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+    searched_directories:
+      - "/run/current-system/sw/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/run/wrappers/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/nix/profile/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/run/current-system/sw/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/run/wrappers/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/nix/profile/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/run/current-system/sw/bin/arm-none-eabi-gcc-ranlib15"
+      - "/run/wrappers/bin/arm-none-eabi-gcc-ranlib15"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-gcc-ranlib15"
+      - "/nix/profile/bin/arm-none-eabi-gcc-ranlib15"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-gcc-ranlib15"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-gcc-ranlib15"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ranlib15"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/arm-none-eabi-gcc-ranlib15"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/arm-none-eabi-gcc-ranlib15"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/arm-none-eabi-gcc-ranlib15"
+    found: "/run/current-system/sw/bin/arm-none-eabi-gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/kaman/Projects/stm/rx/build/CMakeFiles/CMakeScratch/TryCompile-Gwddh9"
+      binary: "/home/kaman/Projects/stm/rx/build/CMakeFiles/CMakeScratch/TryCompile-Gwddh9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g3"
+      CMAKE_EXE_LINKER_FLAGS: "-mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -T \"/home/kaman/Projects/stm/rx/STM32F407XX_FLASH.ld\" --specs=nano.specs -Wl,-Map=rx.map -Wl,--gc-sections -Wl,--print-memory-usage"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kaman/Projects/stm/rx/build/CMakeFiles/CMakeScratch/TryCompile-Gwddh9'
+        
+        Run Build Command(s): /run/current-system/sw/bin/cmake -E env VERBOSE=1 /run/current-system/sw/bin/make -f Makefile cmTC_d7bed/fast
+        /run/current-system/sw/bin/make  -f CMakeFiles/cmTC_d7bed.dir/build.make CMakeFiles/cmTC_d7bed.dir/build
+        make[1]: Entering directory '/home/kaman/Projects/stm/rx/build/CMakeFiles/CMakeScratch/TryCompile-Gwddh9'
+        Building C object CMakeFiles/cmTC_d7bed.dir/CMakeCCompilerABI.c.obj
+        /run/current-system/sw/bin/arm-none-eabi-gcc   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage  -std=gnu11   -v -o CMakeFiles/cmTC_d7bed.dir/CMakeCCompilerABI.c.obj -c /run/current-system/sw/share/cmake-4.1/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/run/current-system/sw/bin/arm-none-eabi-gcc
+        Target: arm-none-eabi
+        Configured with: /data/jenkins/workspace/GNU-toolchain/arm-15/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://gitlab.arm.com/tooling/gnu-devtools-for-arm/-/issues/ --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)'
+        Thread model: single
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20251203 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_d7bed.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_d7bed.dir/'
+         /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../libexec/gcc/arm-none-eabi/15.2.1/cc1 -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/ -isysroot /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /run/current-system/sw/share/cmake-4.1/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d7bed.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -Wall -std=gnu11 -version -fstack-usage -fdata-sections -ffunction-sections -fstack-usage -o /tmp/ccMcf5yU.s
+        GNU C11 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) version 15.2.1 20251203 (arm-none-eabi)
+        	compiled by GNU C version 9.2.1 20191120 (Red Hat 9.2.1-2), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/include"
+        ignoring nonexistent directory "/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../arm-none-eabi/usr/local/include"
+        ignoring duplicate directory "/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/include-fixed"
+        ignoring duplicate directory "/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include"
+        ignoring duplicate directory "/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../arm-none-eabi/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/include
+         /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed
+         /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include
+        End of search list.
+        Compiler executable checksum: b188e82d73c14327741f71b398212fe0
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_d7bed.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_d7bed.dir/'
+         /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/as -v -march=armv7e-m+fp -mfloat-abi=hard -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_d7bed.dir/CMakeCCompilerABI.c.obj /tmp/ccMcf5yU.s
+        GNU assembler version 2.45.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 2.45.1.20251203
+        COMPILER_PATH=/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../libexec/gcc/arm-none-eabi/15.2.1/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../libexec/gcc/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v7e-m+fp/hard/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_d7bed.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_d7bed.dir/CMakeCCompilerABI.c.'
+        Linking C static library libcmTC_d7bed.a
+        /run/current-system/sw/bin/cmake -P CMakeFiles/cmTC_d7bed.dir/cmake_clean_target.cmake
+        /run/current-system/sw/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7bed.dir/link.txt --verbose=1
+        /run/current-system/sw/bin/arm-none-eabi-ar qc libcmTC_d7bed.a CMakeFiles/cmTC_d7bed.dir/CMakeCCompilerABI.c.obj
+        /run/current-system/sw/bin/arm-none-eabi-ranlib libcmTC_d7bed.a
+        make[1]: Leaving directory '/home/kaman/Projects/stm/rx/build/CMakeFiles/CMakeScratch/TryCompile-Gwddh9'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/include]
+          add: [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed]
+          add: [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/include] ==> [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/lib/gcc/arm-none-eabi/15.2.1/include]
+        collapse include dir [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed] ==> [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/lib/gcc/arm-none-eabi/15.2.1/include-fixed]
+        collapse include dir [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include] ==> [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/arm-none-eabi/include]
+        implicit include dirs: [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/lib/gcc/arm-none-eabi/15.2.1/include;/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/lib/gcc/arm-none-eabi/15.2.1/include-fixed;/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(arm-none-eabi-g\\+\\+|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/kaman/Projects/stm/rx/build/CMakeFiles/CMakeScratch/TryCompile-Gwddh9']
+        ignore line: []
+        ignore line: [Run Build Command(s): /run/current-system/sw/bin/cmake -E env VERBOSE=1 /run/current-system/sw/bin/make -f Makefile cmTC_d7bed/fast]
+        ignore line: [/run/current-system/sw/bin/make  -f CMakeFiles/cmTC_d7bed.dir/build.make CMakeFiles/cmTC_d7bed.dir/build]
+        ignore line: [make[1]: Entering directory '/home/kaman/Projects/stm/rx/build/CMakeFiles/CMakeScratch/TryCompile-Gwddh9']
+        ignore line: [Building C object CMakeFiles/cmTC_d7bed.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/run/current-system/sw/bin/arm-none-eabi-gcc   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage  -std=gnu11   -v -o CMakeFiles/cmTC_d7bed.dir/CMakeCCompilerABI.c.obj -c /run/current-system/sw/share/cmake-4.1/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/run/current-system/sw/bin/arm-none-eabi-gcc]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /data/jenkins/workspace/GNU-toolchain/arm-15/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://gitlab.arm.com/tooling/gnu-devtools-for-arm/-/issues/ --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)']
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20251203 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_d7bed.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_d7bed.dir/']
+        ignore line: [ /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../libexec/gcc/arm-none-eabi/15.2.1/cc1 -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/ -isysroot /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /run/current-system/sw/share/cmake-4.1/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d7bed.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -Wall -std=gnu11 -version -fstack-usage -fdata-sections -ffunction-sections -fstack-usage -o /tmp/ccMcf5yU.s]
+        ignore line: [GNU C11 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) version 15.2.1 20251203 (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 9.2.1 20191120 (Red Hat 9.2.1-2)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/include"]
+        ignore line: [ignoring nonexistent directory "/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../arm-none-eabi/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../arm-none-eabi/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/include]
+        ignore line: [ /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed]
+        ignore line: [ /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: b188e82d73c14327741f71b398212fe0]
+        ignore line: [COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_d7bed.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_d7bed.dir/']
+        ignore line: [ /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/as -v -march=armv7e-m+fp -mfloat-abi=hard -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_d7bed.dir/CMakeCCompilerABI.c.obj /tmp/ccMcf5yU.s]
+        ignore line: [GNU assembler version 2.45.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 2.45.1.20251203]
+        ignore line: [COMPILER_PATH=/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../libexec/gcc/arm-none-eabi/15.2.1/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../libexec/gcc/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v7e-m+fp/hard/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_d7bed.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_d7bed.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C static library libcmTC_d7bed.a]
+        ignore line: [/run/current-system/sw/bin/cmake -P CMakeFiles/cmTC_d7bed.dir/cmake_clean_target.cmake]
+        ignore line: [/run/current-system/sw/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7bed.dir/link.txt --verbose=1]
+        ignore line: [/run/current-system/sw/bin/arm-none-eabi-ar qc libcmTC_d7bed.a CMakeFiles/cmTC_d7bed.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/run/current-system/sw/bin/arm-none-eabi-ranlib libcmTC_d7bed.a]
+        ignore line: [make[1]: Leaving directory '/home/kaman/Projects/stm/rx/build/CMakeFiles/CMakeScratch/TryCompile-Gwddh9']
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/kaman/Projects/stm/rx/build/CMakeFiles/CMakeScratch/TryCompile-SoYihA"
+      binary: "/home/kaman/Projects/stm/rx/build/CMakeFiles/CMakeScratch/TryCompile-SoYihA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -fno-rtti -fno-exceptions -fno-threadsafe-statics"
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g3"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -T \"/home/kaman/Projects/stm/rx/STM32F407XX_FLASH.ld\" --specs=nano.specs -Wl,-Map=rx.map -Wl,--gc-sections -Wl,--print-memory-usage"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kaman/Projects/stm/rx/build/CMakeFiles/CMakeScratch/TryCompile-SoYihA'
+        
+        Run Build Command(s): /run/current-system/sw/bin/cmake -E env VERBOSE=1 /run/current-system/sw/bin/make -f Makefile cmTC_84c66/fast
+        /run/current-system/sw/bin/make  -f CMakeFiles/cmTC_84c66.dir/build.make CMakeFiles/cmTC_84c66.dir/build
+        make[1]: Entering directory '/home/kaman/Projects/stm/rx/build/CMakeFiles/CMakeScratch/TryCompile-SoYihA'
+        Building CXX object CMakeFiles/cmTC_84c66.dir/CMakeCXXCompilerABI.cpp.obj
+        /run/current-system/sw/bin/arm-none-eabi-g++   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -fno-rtti -fno-exceptions -fno-threadsafe-statics    -v -o CMakeFiles/cmTC_84c66.dir/CMakeCXXCompilerABI.cpp.obj -c /run/current-system/sw/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/run/current-system/sw/bin/arm-none-eabi-g++
+        Target: arm-none-eabi
+        Configured with: /data/jenkins/workspace/GNU-toolchain/arm-15/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://gitlab.arm.com/tooling/gnu-devtools-for-arm/-/issues/ --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)'
+        Thread model: single
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20251203 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_84c66.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_84c66.dir/'
+         /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../libexec/gcc/arm-none-eabi/15.2.1/cc1plus -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/ -isysroot /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /run/current-system/sw/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_84c66.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -Wall -version -fstack-usage -fdata-sections -ffunction-sections -fstack-usage -fno-rtti -fno-exceptions -fno-threadsafe-statics -o /tmp/cci6tzoS.s
+        GNU C++17 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) version 15.2.1 20251203 (arm-none-eabi)
+        	compiled by GNU C version 9.2.1 20191120 (Red Hat 9.2.1-2), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include/c++/15.2.1"
+        ignoring duplicate directory "/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include/c++/15.2.1/arm-none-eabi/thumb/v7e-m+fp/hard"
+        ignoring duplicate directory "/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include/c++/15.2.1/backward"
+        ignoring duplicate directory "/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/include"
+        ignoring nonexistent directory "/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../arm-none-eabi/usr/local/include"
+        ignoring duplicate directory "/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/include-fixed"
+        ignoring duplicate directory "/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include"
+        ignoring duplicate directory "/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../arm-none-eabi/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include/c++/15.2.1
+         /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include/c++/15.2.1/arm-none-eabi/thumb/v7e-m+fp/hard
+         /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include/c++/15.2.1/backward
+         /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/include
+         /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed
+         /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include
+        End of search list.
+        Compiler executable checksum: 11dcbadfa8b298132a6bf615d82ed1e4
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_84c66.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_84c66.dir/'
+         /nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/as -v -march=armv7e-m+fp -mfloat-abi=hard -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_84c66.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cci6tzoS.s
+        GNU assembler version 2.45.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 2.45.1.20251203
+        COMPILER_PATH=/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../libexec/gcc/arm-none-eabi/15.2.1/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../libexec/gcc/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v7e-m+fp/hard/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/:/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_84c66.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_84c66.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX static library libcmTC_84c66.a
+        /run/current-system/sw/bin/cmake -P CMakeFiles/cmTC_84c66.dir/cmake_clean_target.cmake
+        /run/current-system/sw/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84c66.dir/link.txt --verbose=1
+        /run/current-system/sw/bin/arm-none-eabi-ar qc libcmTC_84c66.a CMakeFiles/cmTC_84c66.dir/CMakeCXXCompilerABI.cpp.obj
+        /run/current-system/sw/bin/arm-none-eabi-ranlib libcmTC_84c66.a
+        make[1]: Leaving directory '/home/kaman/Projects/stm/rx/build/CMakeFiles/CMakeScratch/TryCompile-SoYihA'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include/c++/15.2.1]
+          add: [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include/c++/15.2.1/arm-none-eabi/thumb/v7e-m+fp/hard]
+          add: [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include/c++/15.2.1/backward]
+          add: [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/include]
+          add: [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed]
+          add: [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include/c++/15.2.1] ==> [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/arm-none-eabi/include/c++/15.2.1]
+        collapse include dir [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include/c++/15.2.1/arm-none-eabi/thumb/v7e-m+fp/hard] ==> [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/arm-none-eabi/include/c++/15.2.1/arm-none-eabi/thumb/v7e-m+fp/hard]
+        collapse include dir [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include/c++/15.2.1/backward] ==> [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/arm-none-eabi/include/c++/15.2.1/backward]
+        collapse include dir [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/include] ==> [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/lib/gcc/arm-none-eabi/15.2.1/include]
+        collapse include dir [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed] ==> [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/lib/gcc/arm-none-eabi/15.2.1/include-fixed]
+        collapse include dir [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include] ==> [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/arm-none-eabi/include]
+        implicit include dirs: [/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/arm-none-eabi/include/c++/15.2.1;/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/arm-none-eabi/include/c++/15.2.1/arm-none-eabi/thumb/v7e-m+fp/hard;/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/arm-none-eabi/include/c++/15.2.1/backward;/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/lib/gcc/arm-none-eabi/15.2.1/include;/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/lib/gcc/arm-none-eabi/15.2.1/include-fixed;/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(arm-none-eabi-g\\+\\+|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/kaman/Projects/stm/rx/build/CMakeFiles/CMakeScratch/TryCompile-SoYihA']
+        ignore line: []
+        ignore line: [Run Build Command(s): /run/current-system/sw/bin/cmake -E env VERBOSE=1 /run/current-system/sw/bin/make -f Makefile cmTC_84c66/fast]
+        ignore line: [/run/current-system/sw/bin/make  -f CMakeFiles/cmTC_84c66.dir/build.make CMakeFiles/cmTC_84c66.dir/build]
+        ignore line: [make[1]: Entering directory '/home/kaman/Projects/stm/rx/build/CMakeFiles/CMakeScratch/TryCompile-SoYihA']
+        ignore line: [Building CXX object CMakeFiles/cmTC_84c66.dir/CMakeCXXCompilerABI.cpp.obj]
+        link line: [/run/current-system/sw/bin/arm-none-eabi-g++   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -fno-rtti -fno-exceptions -fno-threadsafe-statics    -v -o CMakeFiles/cmTC_84c66.dir/CMakeCXXCompilerABI.cpp.obj -c /run/current-system/sw/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp]
+          arg [/run/current-system/sw/bin/arm-none-eabi-g++] ==> ignore
+          arg [-mcpu=cortex-m4] ==> ignore
+          arg [-mfpu=fpv4-sp-d16] ==> ignore
+          arg [-mfloat-abi=hard] ==> ignore
+          arg [-Wall] ==> ignore
+          arg [-fdata-sections] ==> ignore
+          arg [-ffunction-sections] ==> ignore
+          arg [-fstack-usage] ==> ignore
+          arg [-mcpu=cortex-m4] ==> ignore
+          arg [-mfpu=fpv4-sp-d16] ==> ignore
+          arg [-mfloat-abi=hard] ==> ignore
+          arg [-Wall] ==> ignore
+          arg [-fdata-sections] ==> ignore
+          arg [-ffunction-sections] ==> ignore
+          arg [-fstack-usage] ==> ignore
+          arg [-fno-rtti] ==> ignore
+          arg [-fno-exceptions] ==> ignore
+          arg [-fno-threadsafe-statics] ==> ignore
+          arg [-v] ==> ignore
+          arg [-o] ==> ignore
+          arg [CMakeFiles/cmTC_84c66.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [-c] ==> ignore
+          arg [/run/current-system/sw/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp] ==> ignore
+        linker tool for 'CXX': /run/current-system/sw/bin/arm-none-eabi-g++
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Running the CXX compiler's linker: "/run/current-system/sw/bin/arm-none-eabi-g++" "-v"
+      Using built-in specs.
+      COLLECT_GCC=/run/current-system/sw/bin/arm-none-eabi-g++
+      COLLECT_LTO_WRAPPER=/nix/store/mmkh2v78liwvll9ikdamv3iqwy5drm1g-gcc-arm-embedded-15.2.rel1/bin/../libexec/gcc/arm-none-eabi/15.2.1/lto-wrapper
+      Target: arm-none-eabi
+      Configured with: /data/jenkins/workspace/GNU-toolchain/arm-15/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-15/build-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://gitlab.arm.com/tooling/gnu-devtools-for-arm/-/issues/ --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)'
+      Thread model: single
+      Supported LTO compression algorithms: zlib zstd
+      gcc version 15.2.1 20251203 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86))
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Running the CXX compiler's linker: "/run/current-system/sw/bin/arm-none-eabi-g++" "-V"
+      arm-none-eabi-g++: error: unrecognized command-line option '-V'
+      arm-none-eabi-g++: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Running the CXX compiler's linker: "/run/current-system/sw/bin/arm-none-eabi-g++" "--version"
+      arm-none-eabi-g++ (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 15.2.1 20251203
+      Copyright (C) 2025 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:64 (_cmake_find_compiler_path)"
+      - "CMakeLists.txt:32 (enable_language)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-gcc"
+    candidate_directories:
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+      - "/bin/"
+    searched_directories:
+      - "/run/wrappers/bin/arm-none-eabi-gcc"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-gcc"
+      - "/nix/profile/bin/arm-none-eabi-gcc"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-gcc"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-gcc"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc"
+    found: "/run/current-system/sw/bin/arm-none-eabi-gcc"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1290 (message)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:32 (enable_language)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-none-eabi-gcc (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 15.2.1 20251203
+      Copyright (C) 2025 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
+      - "CMakeLists.txt:32 (enable_language)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-gcc-ar-"
+      - "arm-none-eabi-gcc-ar-"
+      - "arm-none-eabi-gcc-ar"
+      - "arm-none-eabi-gcc-ar"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+      - "/bin/"
+    searched_directories:
+      - "/run/current-system/sw/bin/arm-none-eabi-gcc-ar-"
+      - "/run/wrappers/bin/arm-none-eabi-gcc-ar-"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-gcc-ar-"
+      - "/nix/profile/bin/arm-none-eabi-gcc-ar-"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-gcc-ar-"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-gcc-ar-"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ar-"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/arm-none-eabi-gcc-ar-"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/arm-none-eabi-gcc-ar-"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/arm-none-eabi-gcc-ar-"
+      - "/bin/arm-none-eabi-gcc-ar-"
+      - "/run/current-system/sw/bin/arm-none-eabi-gcc-ar-"
+      - "/run/wrappers/bin/arm-none-eabi-gcc-ar-"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-gcc-ar-"
+      - "/nix/profile/bin/arm-none-eabi-gcc-ar-"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-gcc-ar-"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-gcc-ar-"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ar-"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/arm-none-eabi-gcc-ar-"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/arm-none-eabi-gcc-ar-"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/arm-none-eabi-gcc-ar-"
+      - "/bin/arm-none-eabi-gcc-ar-"
+    found: "/run/current-system/sw/bin/arm-none-eabi-gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/run/current-system/sw/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/run/current-system/sw/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
+      - "CMakeLists.txt:32 (enable_language)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-gcc-ranlib-"
+      - "arm-none-eabi-gcc-ranlib-"
+      - "arm-none-eabi-gcc-ranlib"
+      - "arm-none-eabi-gcc-ranlib"
+    candidate_directories:
+      - "/run/current-system/sw/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/kaman/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/kaman/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/kaman/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/"
+      - "/bin/"
+    searched_directories:
+      - "/run/current-system/sw/bin/arm-none-eabi-gcc-ranlib-"
+      - "/run/wrappers/bin/arm-none-eabi-gcc-ranlib-"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-gcc-ranlib-"
+      - "/nix/profile/bin/arm-none-eabi-gcc-ranlib-"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-gcc-ranlib-"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-gcc-ranlib-"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ranlib-"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/arm-none-eabi-gcc-ranlib-"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/arm-none-eabi-gcc-ranlib-"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/arm-none-eabi-gcc-ranlib-"
+      - "/bin/arm-none-eabi-gcc-ranlib-"
+      - "/run/current-system/sw/bin/arm-none-eabi-gcc-ranlib-"
+      - "/run/wrappers/bin/arm-none-eabi-gcc-ranlib-"
+      - "/home/kaman/.nix-profile/bin/arm-none-eabi-gcc-ranlib-"
+      - "/nix/profile/bin/arm-none-eabi-gcc-ranlib-"
+      - "/home/kaman/.local/state/nix/profile/bin/arm-none-eabi-gcc-ranlib-"
+      - "/etc/profiles/per-user/kaman/bin/arm-none-eabi-gcc-ranlib-"
+      - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ranlib-"
+      - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin/arm-none-eabi-gcc-ranlib-"
+      - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin/arm-none-eabi-gcc-ranlib-"
+      - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin/arm-none-eabi-gcc-ranlib-"
+      - "/bin/arm-none-eabi-gcc-ranlib-"
+    found: "/run/current-system/sw/bin/arm-none-eabi-gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/run/wrappers/bin"
+        - "/home/kaman/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/kaman/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/kaman/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+        - "/nix/store/ahbnjqpvc1cfcl50k53diy3s7s1rbvqp-kitty-0.47.1/bin"
+        - "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23/bin"
+        - "/nix/store/gi6n3gp7z0d1j4f2zpc7rwygjj45zgm4-ncurses-6.6-dev/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+...

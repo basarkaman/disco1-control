@@ -1,0 +1,13 @@
+/home/kaman/Projects/stm/rx/Core/Src/main.c:93:5:__io_putchar	16	static
+/home/kaman/Projects/stm/rx/Core/Src/main.c:119:5:main	8	static
+/home/kaman/Projects/stm/rx/Core/Src/main.c:219:6:SystemClock_Config	88	static
+/home/kaman/Projects/stm/rx/Core/Src/main.c:265:13:MX_ADC1_Init	24	static
+/home/kaman/Projects/stm/rx/Core/Src/main.c:317:13:MX_I2C1_Init	8	static
+/home/kaman/Projects/stm/rx/Core/Src/main.c:351:13:MX_I2S3_Init	8	static
+/home/kaman/Projects/stm/rx/Core/Src/main.c:385:13:MX_SPI1_Init	8	static
+/home/kaman/Projects/stm/rx/Core/Src/main.c:423:13:MX_USART2_UART_Init	8	static
+/home/kaman/Projects/stm/rx/Core/Src/main.c:456:13:MX_GPIO_Init	56	static
+/home/kaman/Projects/stm/rx/Core/Src/main.c:575:13:DebugPrint	48	static
+/home/kaman/Projects/stm/rx/Core/Src/main.c:587:6:StartDebugTask	16	static
+/home/kaman/Projects/stm/rx/Core/Src/main.c:606:6:StartDefaultTask	16	static
+/home/kaman/Projects/stm/rx/Core/Src/main.c:623:6:Error_Handler	4	static
