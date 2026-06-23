@@ -1,5 +1,0 @@
-/home/kaman/Projects/stm/rx/Core/Src/step_control.c:32:7:PulseMsFromPercent	24	static
-/home/kaman/Projects/stm/rx/Core/Src/step_control.c:42:13:StepTask_Wait	16	static
-/home/kaman/Projects/stm/rx/Core/Src/step_control.c:53:13:StepControl	16	static
-/home/kaman/Projects/stm/rx/Core/Src/step_control.c:66:13:StartStepTask	24	static
-/home/kaman/Projects/stm/rx/Core/Src/step_control.c:84:6:StepControl_Init	8	static

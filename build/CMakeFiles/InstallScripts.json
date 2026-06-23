@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/kaman/Projects/stm/rx/build/cmake_install.cmake",
-		"/home/kaman/Projects/stm/rx/build/cmake/stm32cubemx/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

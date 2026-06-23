@@ -48,6 +48,6 @@ fi
 arm-none-eabi-objcopy -O binary "$ELF_FILE" "$BIN_FILE"
 
 echo "==> [4/4] Flash (st-flash)"
-sudo st-flash write "$BIN_FILE" "$FLASH_ADDR"
+run0 st-flash write "$BIN_FILE" "$FLASH_ADDR"
 
 echo "==> Tamamlandi."

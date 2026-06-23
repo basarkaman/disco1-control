@@ -1,4 +1,5 @@
 #include "step_control.h"
+#include "cmsis_os2.h"
 #include "main.h"
 #include "cmsis_os.h"
 #include <math.h>
@@ -24,60 +25,70 @@ static const osThreadAttr_t stepTask_attributes = {
   .priority = (osPriority_t) osPriorityLow,
 };
 
-/* Yuzdeye gore pulse suresi (ms) - ileride step hizini ayarlamak icin.
-   Su an cagrilmiyor; referans olarak burada tutuluyor. */
-#define PULSE_K       200.0f
-#define PULSE_MS_MAX  5000.0f   // x=0'a yakinken pratik tavan (5 saniye gibi)
+extern void set_arr(int arr);
+extern TIM_HandleTypeDef htim3;
 
-float PulseMsFromPercent(float pct)
+#define STEP_TIM_CHANNEL   TIM_CHANNEL_3   // kendi timer kanalına göre değiştir
+#define STEP_ARR_VALUE     999             // hareket halindeki periyot (frekansı burada ayarla)
+#define STEP_DUTY_PERCENT  50              // step pulse duty cycle (%)
+
+#define MIN_FREQ_HZ    100      // %0 hız -> en düşük frekans
+#define MAX_FREQ_HZ    1000    // %100 hız -> en yüksek frekans
+#define COUNTER_CLOCK  1000000UL  // PSC ile elde ettiğin sayıcı clock'u (örn. 1 MHz)
+
+uint32_t SpeedPercentToARR(float speed_percent)
 {
-    if (pct <= 0.1f) {
-        return PULSE_MS_MAX;   // ya da: pulse uretme, motoru tamamen durdur
-    }
-    float ms = PULSE_K / pct;
-    if (ms > PULSE_MS_MAX) ms = PULSE_MS_MAX;
-    return ms;
+    if(speed_percent < 0.0f)   speed_percent = 0.0f;
+    if(speed_percent > 100.0f) speed_percent = 100.0f;
+
+    /* 1. Önce % değerini frekansa çevir (doğrusal interpolasyon) */
+    float freq = MIN_FREQ_HZ + (MAX_FREQ_HZ - MIN_FREQ_HZ) * (speed_percent / 100.0f);
+
+    /* 2. Frekansı ARR'a çevir */
+    uint32_t arr = (uint32_t)(COUNTER_CLOCK / freq) - 1;
+
+    return arr;
 }
-
-static void StepTask_Wait()
-{
-    const uint32_t POLL_MS = 1;
-
-    while (remaining_delay > 0) {
-        uint32_t chunk = (remaining_delay < POLL_MS) ? remaining_delay : POLL_MS;
-        osDelay(chunk);
-        remaining_delay -= chunk;
-    }
-}
-
-static void StepControl(int b)
-{
-    if(b) {
-        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, 1);   
-        HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_2);
-    } else if(!b) {
-        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, 0);
-        HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_2);
-    }
-}
-
-
 
 static void StartStepTask(void *argument)
 {
   (void)argument;
+
+  set_arr(999);
+  uint8_t pwm_active = 1;
+
   for(;;)
   {
-    int b;
-    if(pos_pct[0] < 45.f) {
-        b = 1;
-    } else if(pos_pct[0] > 55.f) {
-        b = 0;
+    float pos = pos_pct[0];
+    int stop;
+
+    if(pos < 45.0f) {
+        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_SET);
+        stop = 0;
+        uint32_t yeni_arr = SpeedPercentToARR(fabs(50 - pos) * 2);
+    
+        set_arr(yeni_arr);
+    } else if(pos > 55.0f) {
+        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_RESET);
+        stop = 0;
+        uint32_t yeni_arr = SpeedPercentToARR(fabs(50 - pos) * 2);
+    
+        set_arr(yeni_arr);
+    } else {
+        stop = 1;
     }
-    StepControl(b);
-    float pct = fabs(pos_pct[0] - 50);
-    remaining_delay = PulseMsFromPercent(pct);
-    StepTask_Wait();
+
+    // set_arr(10000 - (pos * 10.0f));
+
+    if(stop && pwm_active) {
+        HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_3);   // çıkışı tamamen kapat
+        pwm_active = 0;
+    } else if(!stop && !pwm_active) {
+        HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);  // çıkışı tekrar aç
+        pwm_active = 1;
+    }
+    
+    osDelay(1);
   }
 }
 

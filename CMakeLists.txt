@@ -46,6 +46,7 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     Core/Src/rc.c
     Core/Src/step_control.c
+    Core/Src/mcp4725.c
 )
 
 # Add include paths

@@ -38,6 +38,8 @@ static inline int ch_index(uint16_t pin)
   }
 }
 
+extern void user_pwm_setvalue(uint16_t value);
+
 /* HAL'in weak EXTI callback'inin gercek implementasyonu.
    Proje genelinde sadece BURADA tanimli olmali (baska yerde tekrar
    tanimlarsan linker "multiple definition" hatasi verir). */
