@@ -8,7 +8,6 @@
 
 #define NUM_CH 6
 
-
 extern volatile uint32_t t_rise[NUM_CH];
 extern volatile uint32_t pulse_cyc[NUM_CH];
 extern volatile uint8_t  ready[NUM_CH];
@@ -59,17 +58,17 @@ static void StartStepTask(void *argument)
 
   for(;;)
   {
-    float pos = pos_pct[0];
+    float pos = pos_pct[3];
     int stop;
 
     if(pos < 45.0f) {
-        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_RESET);
         stop = 0;
         uint32_t yeni_arr = SpeedPercentToARR(fabs(50 - pos) * 2);
     
         set_arr(yeni_arr);
     } else if(pos > 55.0f) {
-        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_SET);
         stop = 0;
         uint32_t yeni_arr = SpeedPercentToARR(fabs(50 - pos) * 2);
     

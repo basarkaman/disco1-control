@@ -7,6 +7,14 @@
 static I2C_HandleTypeDef *s_hi2c = NULL;
 static volatile uint16_t  s_raw  = 0;
 
+#define NUM_CH 6
+
+extern volatile uint32_t t_rise[NUM_CH];
+extern volatile uint32_t pulse_cyc[NUM_CH];
+extern volatile uint8_t  ready[NUM_CH];
+extern volatile uint32_t pulse_us[NUM_CH];
+extern volatile float    pos_pct[NUM_CH];
+
 static osThreadId_t dacTaskHandle;
 static const osThreadAttr_t dacTask_attributes = {
   .name       = "dacTask",
@@ -25,12 +33,24 @@ static void DAC_Write(uint16_t raw)
     HAL_I2C_Master_Transmit(s_hi2c, MCP4725_ADDR, buf, 2, 10);
 }
 
+float clampf(float x, float lo, float hi) {
+    if (x < lo) return lo;
+    if (x > hi) return hi;
+    return x;
+}
+
 static void StartDACTask(void *argument)
 {
     (void)argument;
     for (;;)
     {
-        DAC_Write(s_raw);
+        float pct = pos_pct[1];
+        if (pct >= 52.5f) {
+            float val = (uint16_t)((pct - 52.5f) * 43.11f);
+            DAC_Write(val);
+        }
+        else
+            DAC_Write(0);
         osDelay(DAC_TASK_PERIOD_MS);
     }
 }
