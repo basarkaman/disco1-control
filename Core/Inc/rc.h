@@ -3,14 +3,15 @@
 
 #include <stdint.h>
 
-#define NUM_CH 6
+#define NUM_CH 10
 
-/* RC giris isleme + LED guncelleme task'ini yaratir.
-   osKernelInitialize()'dan sonra, osKernelStart()'tan once cagrilmali. */
+/* 0 = RC kumanda modu, 1 = PC kontrol modu */
+extern volatile uint8_t g_pc_mode;
+
 void RCInput_Init(void);
-
-/* Son islenmis kanal pozisyon yuzdesi (0-100). channel: 0=CH1 ... 5=CH6.
-   Diger modullerin pos_pct[] dizisine direkt erismemesi icin getter. */
 float RCInput_GetPosPct(uint8_t channel);
+
+/* PC modunda komut alındığında ilgili LED'i 200ms yakar. led_idx: 0-3 */
+void RC_FlashLED(uint8_t led_idx);
 
 #endif /* RC_H */

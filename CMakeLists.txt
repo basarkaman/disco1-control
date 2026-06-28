@@ -49,6 +49,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     Core/Src/mcp4725.c
     Core/Src/linear.c
     Core/Src/sr_control.c
+    Core/Src/pc_control.c
 )
 
 # Add include paths

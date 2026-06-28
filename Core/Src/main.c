@@ -169,6 +169,7 @@ int main(void)
   MX_ADC1_Init();
   MX_TIM3_Init();
   MX_SPI2_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
   user_pwm_setvalue(270);

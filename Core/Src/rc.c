@@ -20,6 +20,14 @@
 volatile uint16_t ibus_val[NUM_CH]  = {0};
 volatile float    pos_pct[NUM_CH]   = {0};
 volatile uint8_t  ready[NUM_CH]     = {0};
+volatile uint8_t  g_pc_mode         = 0;
+
+static volatile uint32_t s_led_flash_ms[4] = {0};
+
+void RC_FlashLED(uint8_t led_idx)
+{
+    if (led_idx < 4) s_led_flash_ms[led_idx] = 200u;
+}
 
 static uint8_t ibusBuf[IBUS_FRAME_LEN];
 
@@ -115,7 +123,21 @@ static void StartRCTask(void *argument)
   for(;;)
   {
     RC_ProcessChannels();
-    RC_UpdateLEDs();
+    g_pc_mode = (pos_pct[6] > 50.0f) ? 1u : 0u;
+
+    for (int i = 0; i < 4; i++) {
+        GPIO_PinState state;
+        if (s_led_flash_ms[i] > 0u) {
+            s_led_flash_ms[i] -= (s_led_flash_ms[i] > RC_TASK_PERIOD_MS)
+                                  ? RC_TASK_PERIOD_MS : s_led_flash_ms[i];
+            state = GPIO_PIN_SET;
+        } else if (g_pc_mode) {
+            state = GPIO_PIN_RESET;
+        } else {
+            state = (pos_pct[i] > 50.0f) ? GPIO_PIN_SET : GPIO_PIN_RESET;
+        }
+        HAL_GPIO_WritePin(GPIOD, led_pin[i], state);
+    }
     osDelay(RC_TASK_PERIOD_MS);
   }
 }

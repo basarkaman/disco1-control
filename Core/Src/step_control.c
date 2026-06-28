@@ -1,4 +1,5 @@
 #include "step_control.h"
+#include "rc.h"
 #include "cmsis_os2.h"
 #include "main.h"
 #include "cmsis_os.h"
@@ -6,13 +7,10 @@
 
 #define STEP_TASK_PERIOD_MS  5u
 
-#define NUM_CH 6
+extern volatile float pos_pct[];
 
-extern volatile uint32_t t_rise[NUM_CH];
-extern volatile uint32_t pulse_cyc[NUM_CH];
-extern volatile uint8_t  ready[NUM_CH];
-extern volatile uint32_t pulse_us[NUM_CH];
-extern volatile float    pos_pct[NUM_CH];
+static volatile float   s_step_target = 50.0f;
+static volatile uint8_t s_step_dir    = 0;
 
 uint32_t remaining_delay;
 const uint32_t POLL_MS = 5;
@@ -58,35 +56,41 @@ static void StartStepTask(void *argument)
 
   for(;;)
   {
-    float pos = pos_pct[3];
     int stop;
 
-    if(pos < 45.0f) {
-        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_RESET);
-        stop = 0;
-        uint32_t yeni_arr = SpeedPercentToARR(fabs(50 - pos) * 2);
-    
-        set_arr(yeni_arr);
-    } else if(pos > 55.0f) {
-        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_SET);
-        stop = 0;
-        uint32_t yeni_arr = SpeedPercentToARR(fabs(50 - pos) * 2);
-    
-        set_arr(yeni_arr);
+    if (g_pc_mode) {
+        float speed = s_step_target;
+        if (speed < 1.0f) {
+            stop = 1;
+        } else {
+            HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1,
+                s_step_dir ? GPIO_PIN_SET : GPIO_PIN_RESET);
+            set_arr(SpeedPercentToARR(speed));
+            stop = 0;
+        }
     } else {
-        stop = 1;
+        float pos = pos_pct[3];
+        if (pos < 45.0f) {
+            HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_RESET);
+            set_arr(SpeedPercentToARR(fabs(50.0f - pos) * 2.0f));
+            stop = 0;
+        } else if (pos > 55.0f) {
+            HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_SET);
+            set_arr(SpeedPercentToARR(fabs(50.0f - pos) * 2.0f));
+            stop = 0;
+        } else {
+            stop = 1;
+        }
     }
 
-    // set_arr(10000 - (pos * 10.0f));
-
-    if(stop && pwm_active) {
-        HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_3);   // çıkışı tamamen kapat
+    if (stop && pwm_active) {
+        HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_3);
         pwm_active = 0;
-    } else if(!stop && !pwm_active) {
-        HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);  // çıkışı tekrar aç
+    } else if (!stop && !pwm_active) {
+        HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
         pwm_active = 1;
     }
-    
+
     osDelay(1);
   }
 }
@@ -94,4 +98,17 @@ static void StartStepTask(void *argument)
 void StepControl_Init(void)
 {
   stepTaskHandle = osThreadNew(StartStepTask, NULL, &stepTask_attributes);
+}
+
+void StepControl_SetTarget(float pct)
+{
+    if (pct < 0.0f)   pct = 0.0f;
+    if (pct > 100.0f) pct = 100.0f;
+    s_step_target = pct;
+}
+
+void StepControl_SetDirAngle(uint8_t dir, uint16_t angle)
+{
+    s_step_dir    = dir;
+    s_step_target = (angle / 8191.0f) * 100.0f;
 }

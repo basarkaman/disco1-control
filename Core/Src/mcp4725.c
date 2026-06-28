@@ -1,11 +1,13 @@
 #include "mcp4725.h"
+#include "rc.h"
 #include "cmsis_os.h"
 #include <math.h>
 
 #define DAC_TASK_PERIOD_MS  10u
 
 static I2C_HandleTypeDef *s_hi2c = NULL;
-static volatile uint16_t  s_raw  = 0;
+static volatile uint16_t  s_raw       = 0;
+static volatile uint16_t  s_raw12_pc  = 0;
 
 #define NUM_CH 6
 
@@ -44,13 +46,15 @@ static void StartDACTask(void *argument)
     (void)argument;
     for (;;)
     {
-        float pct = pos_pct[1];
-        if (pct >= 52.5f) {
-            float val = (uint16_t)((pct - 52.5f) * 43.11f);
-            DAC_Write(val);
+        if (g_pc_mode) {
+            DAC_Write(s_raw12_pc);
+        } else {
+            float pct = pos_pct[1];
+            if (pct >= 52.5f)
+                DAC_Write((uint16_t)((pct - 52.5f) * 43.11f));
+            else
+                DAC_Write(0);
         }
-        else
-            DAC_Write(0);
         osDelay(DAC_TASK_PERIOD_MS);
     }
 }
@@ -72,4 +76,10 @@ void MCP4725_SetVoltage(float volts)
     if (volts < 0.0f)          volts = 0.0f;
     if (volts > MCP4725_VREF)  volts = MCP4725_VREF;
     s_raw = (uint16_t)(volts / MCP4725_VREF * MCP4725_MAX);
+}
+
+void MCP4725_SetRaw12(uint16_t val)
+{
+    if (val > MCP4725_MAX) val = MCP4725_MAX;
+    s_raw12_pc = val;
 }

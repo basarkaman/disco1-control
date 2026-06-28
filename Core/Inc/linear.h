@@ -1,11 +1,18 @@
 #ifndef LINEAR_H
 #define LINEAR_H
 
-/* Lineer aktüatör görevini oluşturur.
-   osKernelInitialize()'dan sonra, osKernelStart()'tan önce çağrılmalı. */
+#include <stdint.h>
+
+#define LINEAR_IDLE    0u
+#define LINEAR_EXTEND  1u
+#define LINEAR_RETRACT 2u
+
 void Linear_Init(void);
 
-/* Hedef pozisyonu doğrudan yüzde olarak ayarlar (0-100). */
+/* RC modu: hedef pozisyon yüzdesi (0-100). */
 void Linear_SetTarget(float pct);
+
+/* PC modu: direkt motor komutu (LINEAR_IDLE / EXTEND / RETRACT). */
+void Linear_SetCmd(uint8_t cmd);
 
 #endif /* LINEAR_H */

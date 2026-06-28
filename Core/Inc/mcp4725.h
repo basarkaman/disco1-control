@@ -11,11 +11,10 @@
 /* I2C handle'ini baglar ve gorevi olusturur.
    osKernelInitialize()'dan sonra, osKernelStart()'tan once cagrilmali. */
 void MCP4725_Init(I2C_HandleTypeDef *hi2c);
-
-/* 0-4095 arasi ham DAC degeri yazar (bloke etmez, goreve kuyruklar). */
 void MCP4725_SetRaw(uint16_t value);
-
-/* 0.0f-3.3f arasi voltaj yazar. */
 void MCP4725_SetVoltage(float volts);
+
+/* PC modunda 12-bit raw DAC degeri yazar (0-4095). */
+void MCP4725_SetRaw12(uint16_t val);
 
 #endif /* MCP4725_H */

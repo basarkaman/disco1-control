@@ -29,7 +29,10 @@
 #include "step_control.h"
 #include "mcp4725.h"
 #include "linear.h"
-#include "i2c.h"   /* hi2c1 icin */
+#include "i2c.h"
+#include "sr_control.h"
+#include "spi.h"
+#include "pc_control.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -98,11 +101,13 @@ void MX_FREERTOS_Init(void) {
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
-  RCInput_Init();   // rcTask'i rc.c modulu kendi yaratir
-  // debugTaskHandle   = osThreadNew(StartDebugTask, NULL, &debugTask_attributes);
+  RCInput_Init();
+  // debugTaskHandle = osThreadNew(StartDebugTask, NULL, &debugTask_attributes);
   StepControl_Init();
   MCP4725_Init(&hi2c1);
   Linear_Init();
+  SR_Init(&hspi2);
+  PCControl_Init();
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
