@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(grep -nE \"^\\(static \\)?\\(void|float|int|HAL_StatusTypeDef|uint32_t\\) +[A-Za-z_]+\\\\\\(.*\\\\\\)\\( *\\\\{\\)?$\" Core/Src/main.c)"
-    ]
-  }
-}
