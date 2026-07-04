@@ -1,4 +1,5 @@
 #include "linear.h"
+#include "sr_control.h"
 #include "rc.h"
 #include "main.h"
 #include "cmsis_os.h"
@@ -26,22 +27,26 @@ static float ADC_ReadPct(void)
     return (raw / 4095.0f) * 100.0f;
 }
 
+#define LINEAR_BITS_MASK  0xC0u
+#define LINEAR1_BIT       0x40u   /* bit 6 */
+#define LINEAR2_BIT       0x80u   /* bit 7 */
+
 static void Motor_Extend(void)
 {
-    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_8, GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_9, GPIO_PIN_SET);
+    g_sr_state = (g_sr_state & ~LINEAR_BITS_MASK) | LINEAR1_BIT;
+    SR_Flush();
 }
 
 static void Motor_Retract(void)
 {
-    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_8, GPIO_PIN_SET);
-    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_9, GPIO_PIN_RESET);
+    g_sr_state = (g_sr_state & ~LINEAR_BITS_MASK) | LINEAR2_BIT;
+    SR_Flush();
 }
 
 static void Motor_Stop(void)
 {
-    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_8, GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_9, GPIO_PIN_RESET);
+    g_sr_state = g_sr_state & ~LINEAR_BITS_MASK;
+    SR_Flush();
 }
 
 static void StartLinearTask(void *argument)
@@ -60,10 +65,8 @@ static void StartLinearTask(void *argument)
             float actual = ADC_ReadPct();
             if (s_target_pct < 45.0f)
                 Motor_Retract();
-            else if (s_target_pct > 55.0f)
+            else
                 Motor_Extend();
-            else if (actual >= s_target_pct - 3.0f && actual <= s_target_pct + 3.0f)
-                Motor_Stop();
         }
         osDelay(LINEAR_TASK_PERIOD_MS);
     }

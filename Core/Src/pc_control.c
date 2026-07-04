@@ -1,4 +1,5 @@
 #include "pc_control.h"
+#include "main.h"
 #include "usart.h"
 #include "cmsis_os.h"
 #include "linear.h"
@@ -20,6 +21,7 @@ static osMessageQueueId_t s_queue;
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
+    HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_9);
     if (huart->Instance != USART1) return;
 
     if (s_state == RX_FIRST) {

@@ -1,7 +1,10 @@
 #include "rc.h"
+#include "sr_control.h"
 #include "main.h"        /* pin tanimlari (LDx_Pin, GPIO_PIN_x) + HAL */
+#include "sr_control.h"
 #include "usart.h"       /* huart2 (CubeMX tarafindan uretilir) */
 #include "cmsis_os.h"
+#include <stdint.h>
 
 /* Task periyodu - iBUS ~50Hz (her ~7ms frame) oldugundan 10ms yeterli */
 #define RC_TASK_PERIOD_MS   10u
@@ -138,6 +141,12 @@ static void StartRCTask(void *argument)
         }
         HAL_GPIO_WritePin(GPIOD, led_pin[i], state);
     }
+    if (pos_pct[9] > 50.0f)
+        g_sr_state |=  0x01u;
+    else
+        g_sr_state &= ~0x01u;
+    SR_Flush();
+
     osDelay(RC_TASK_PERIOD_MS);
   }
 }
