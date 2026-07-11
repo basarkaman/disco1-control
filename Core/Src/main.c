@@ -32,11 +32,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
-#include <math.h>
 #include "rc.h"
-#include "step_control.h"
-#include "mcp4725.h"
-#include "linear.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -87,10 +83,6 @@ static void  DebugPrint(void);
 
 /* Task fonksiyonlari */
 void StartDebugTask(void *argument);
-
-/* PWM yardimci fonksiyonlari (TIM3 CH3 uzerinden) */
-void user_pwm_setvalue(uint16_t value);
-void set_arr(int arr);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -98,27 +90,6 @@ void set_arr(int arr);
 
 /* Task periyotlari (ms) - tek yerden ayarlanir */
 #define DEBUG_TASK_PERIOD_MS    50u
-
-void user_pwm_setvalue(uint16_t value)
-{
-    TIM_OC_InitTypeDef sConfigOC;
-
-    sConfigOC.OCMode = TIM_OCMODE_PWM1;
-    sConfigOC.Pulse = value;
-    sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-    sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
-    HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_3);
-    HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
-}
-
-void set_arr(int arr) {
-    HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_3);
-
-    __HAL_TIM_SET_PRESCALER(&htim3, 84);     // PSC değeri
-    __HAL_TIM_SET_AUTORELOAD(&htim3, arr);   // ARR değeri (frekansı belirler)
-
-    HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
-}
 
 /* USER CODE END 0 */
 
@@ -171,8 +142,7 @@ int main(void)
   MX_SPI2_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
-  user_pwm_setvalue(270);
+  /* TIM3 CH3 PWM baslangic konfigurasyonu StepControl_Init() icinde yapiliyor. */
   setvbuf(stdout, NULL, _IONBF, 0);
   /* USER CODE END 2 */
 

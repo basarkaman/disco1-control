@@ -30,7 +30,14 @@ def step(direction: int, angle: int) -> bytes:
     return bytes([b0, b1])
 
 def sr(data: int) -> bytes:
-    """data: 0-255 (shift register byte)"""
+    """data: 0-255 (shift register byte).
+
+    NOT: MCU tarafinda bu byte artik dogrudan shift register'a yazilmiyor;
+    sadece SR_MASK_PC_SPARE (app_config.h) bitlerine uygulaniyor. bit0 (RC
+    aux) ve bit6-7 (linear motor) baska subsystem'ler tarafindan sahiplenildigi
+    icin buradan gelen degerdeki o bitler etkisiz kalir. Opcode->handler
+    eslesmesi icin otoriter kaynak: Core/Src/pc_control.c icindeki s_commands[].
+    """
     b0 = (0b11 << 6)
     b1 = data & 0xFF
     return bytes([b0, b1])

@@ -1,88 +1,49 @@
 #include "linear.h"
+#include "control.h"
 #include "sr_control.h"
-#include "rc.h"
-#include "main.h"
-#include "cmsis_os.h"
+#include "app_config.h"
 
-#define LINEAR_TASK_PERIOD_MS  20u
+#define LINEAR1_BIT  0x40u   /* bit 6: extend */
+#define LINEAR2_BIT  0x80u   /* bit 7: retract */
 
-extern ADC_HandleTypeDef hadc1;
-extern volatile float pos_pct[];
+static volatile uint8_t s_linear_cmd = LINEAR_IDLE;
 
-static volatile float   s_target_pct  = 50.0f;
-static volatile uint8_t s_linear_cmd  = LINEAR_IDLE;
+static void Motor_Extend(void)  { SR_SetBits(SR_MASK_LINEAR, LINEAR1_BIT); }
+static void Motor_Retract(void) { SR_SetBits(SR_MASK_LINEAR, LINEAR2_BIT); }
+static void Motor_Stop(void)    { SR_SetBits(SR_MASK_LINEAR, 0); }
 
-static osThreadId_t linearTaskHandle;
-static const osThreadAttr_t linearTask_attributes = {
-  .name       = "linearTask",
-  .stack_size = 128 * 4,
-  .priority   = (osPriority_t) osPriorityNormal,
-};
-
-static float ADC_ReadPct(void)
+static void Linear_Update(ControlMode_t mode, float rc_pct)
 {
-    HAL_ADC_Start(&hadc1);
-    HAL_ADC_PollForConversion(&hadc1, 5);
-    uint32_t raw = HAL_ADC_GetValue(&hadc1);
-    return (raw / 4095.0f) * 100.0f;
-}
-
-#define LINEAR_BITS_MASK  0xC0u
-#define LINEAR1_BIT       0x40u   /* bit 6 */
-#define LINEAR2_BIT       0x80u   /* bit 7 */
-
-static void Motor_Extend(void)
-{
-    g_sr_state = (g_sr_state & ~LINEAR_BITS_MASK) | LINEAR1_BIT;
-    SR_Flush();
-}
-
-static void Motor_Retract(void)
-{
-    g_sr_state = (g_sr_state & ~LINEAR_BITS_MASK) | LINEAR2_BIT;
-    SR_Flush();
-}
-
-static void Motor_Stop(void)
-{
-    g_sr_state = g_sr_state & ~LINEAR_BITS_MASK;
-    SR_Flush();
-}
-
-static void StartLinearTask(void *argument)
-{
-    (void)argument;
-    for (;;)
-    {
-        if (g_pc_mode) {
+    switch (mode) {
+        case CTRL_MODE_PC:
             switch (s_linear_cmd) {
                 case LINEAR_EXTEND:  Motor_Extend();  break;
                 case LINEAR_RETRACT: Motor_Retract(); break;
-                default:             Motor_Stop();    break;
+                default:              Motor_Stop();   break;
             }
-        } else {
-            s_target_pct = pos_pct[1];
-            float actual = ADC_ReadPct();
-            if (s_target_pct < 45.0f)
-                Motor_Retract();
-            else
-                Motor_Extend();
-        }
-        osDelay(LINEAR_TASK_PERIOD_MS);
+            break;
+        case CTRL_MODE_RC:
+            if (rc_pct < APP_LINEAR_THRESHOLD_PCT) Motor_Retract();
+            else                                    Motor_Extend();
+            break;
+        case CTRL_MODE_FAILSAFE:
+        default:
+            Motor_Stop();
+            break;
     }
 }
+
+static const ControlSubsystem_t s_linear_subsystem = {
+    .name       = "linear",
+    .rc_channel = RC_CH_LINEAR,
+    .period_ms  = APP_LINEAR_TASK_PERIOD_MS,
+    .update     = Linear_Update,
+};
 
 void Linear_Init(void)
 {
     Motor_Stop();
-    linearTaskHandle = osThreadNew(StartLinearTask, NULL, &linearTask_attributes);
-}
-
-void Linear_SetTarget(float pct)
-{
-    if (pct < 0.0f)   pct = 0.0f;
-    if (pct > 100.0f) pct = 100.0f;
-    s_target_pct = pct;
+    Control_Register(&s_linear_subsystem);
 }
 
 void Linear_SetCmd(uint8_t cmd)

@@ -26,9 +26,11 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "rc.h"
+#include "control.h"
 #include "step_control.h"
 #include "mcp4725.h"
 #include "linear.h"
+#include "aux_control.h"
 #include "i2c.h"
 #include "sr_control.h"
 #include "spi.h"
@@ -101,13 +103,19 @@ void MX_FREERTOS_Init(void) {
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
+  /* Once suruculer/girisler, sonra subsystem'ler (Control_Register ile
+     kendilerini kaydederler), en son Control_Init() scheduler'i baslatir. */
+  SR_Init(&hspi2);
   RCInput_Init();
+  PCControl_Init();
   // debugTaskHandle = osThreadNew(StartDebugTask, NULL, &debugTask_attributes);
+
   StepControl_Init();
   MCP4725_Init(&hi2c1);
   Linear_Init();
-  SR_Init(&hspi2);
-  PCControl_Init();
+  AuxControl_Init();
+
+  Control_Init();
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */

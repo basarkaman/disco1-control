@@ -1,7 +1,6 @@
 #include "rc.h"
-#include "sr_control.h"
-#include "main.h"        /* pin tanimlari (LDx_Pin, GPIO_PIN_x) + HAL */
-#include "sr_control.h"
+#include "app_config.h"
+#include "main.h"        /* pin tanimlari + HAL */
 #include "usart.h"       /* huart2 (CubeMX tarafindan uretilir) */
 #include "cmsis_os.h"
 #include <stdint.h>
@@ -23,18 +22,11 @@
 volatile uint16_t ibus_val[NUM_CH]  = {0};
 volatile float    pos_pct[NUM_CH]   = {0};
 volatile uint8_t  ready[NUM_CH]     = {0};
-volatile uint8_t  g_pc_mode         = 0;
 
-static volatile uint32_t s_led_flash_ms[4] = {0};
-
-void RC_FlashLED(uint8_t led_idx)
-{
-    if (led_idx < 4) s_led_flash_ms[led_idx] = 200u;
-}
+static volatile uint32_t s_last_valid_tick = 0;
+static volatile uint8_t  s_frame_received  = 0;
 
 static uint8_t ibusBuf[IBUS_FRAME_LEN];
-
-static const uint16_t led_pin[4] = { LD4_Pin, LD3_Pin, LD5_Pin, LD6_Pin };
 
 static osThreadId_t rcTaskHandle;
 static const osThreadAttr_t rcTask_attributes = {
@@ -76,6 +68,8 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
                            ((uint16_t)ibusBuf[3 + ch * 2] << 8);
             ready[ch] = 1;
         }
+        s_last_valid_tick = HAL_GetTick();
+        s_frame_received  = 1;
     }
 
     /* DMA'yi yeni frame icin yeniden tetikle */
@@ -102,22 +96,16 @@ static void RC_ProcessChannels(void)
     }
 }
 
-/* ---------------------------------------------------------------------
- * RC_UpdateLEDs
- * Ilk 4 kanalin pozisyonuna gore LED'leri günceller.
- * ------------------------------------------------------------------- */
-static void RC_UpdateLEDs(void)
-{
-    for (int i = 0; i < 4; i++) {
-        HAL_GPIO_WritePin(GPIOD, led_pin[i],
-            (pos_pct[i] > 50.0f) ? GPIO_PIN_SET : GPIO_PIN_RESET);
-    }
-}
-
 float RCInput_GetPosPct(uint8_t channel)
 {
     if (channel >= NUM_CH) return 0.0f;
     return pos_pct[channel];
+}
+
+bool RCInput_LinkOk(void)
+{
+    if (!s_frame_received) return false;
+    return (HAL_GetTick() - s_last_valid_tick) < RC_FAILSAFE_TIMEOUT_MS;
 }
 
 static void StartRCTask(void *argument)
@@ -126,27 +114,6 @@ static void StartRCTask(void *argument)
   for(;;)
   {
     RC_ProcessChannels();
-    g_pc_mode = (pos_pct[6] > 50.0f) ? 1u : 0u;
-
-    for (int i = 0; i < 4; i++) {
-        GPIO_PinState state;
-        if (s_led_flash_ms[i] > 0u) {
-            s_led_flash_ms[i] -= (s_led_flash_ms[i] > RC_TASK_PERIOD_MS)
-                                  ? RC_TASK_PERIOD_MS : s_led_flash_ms[i];
-            state = GPIO_PIN_SET;
-        } else if (g_pc_mode) {
-            state = GPIO_PIN_RESET;
-        } else {
-            state = (pos_pct[i] > 50.0f) ? GPIO_PIN_SET : GPIO_PIN_RESET;
-        }
-        HAL_GPIO_WritePin(GPIOD, led_pin[i], state);
-    }
-    if (pos_pct[9] > 50.0f)
-        g_sr_state |=  0x01u;
-    else
-        g_sr_state &= ~0x01u;
-    SR_Flush();
-
     osDelay(RC_TASK_PERIOD_MS);
   }
 }

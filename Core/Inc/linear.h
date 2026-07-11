@@ -9,9 +9,6 @@
 
 void Linear_Init(void);
 
-/* RC modu: hedef pozisyon yüzdesi (0-100). */
-void Linear_SetTarget(float pct);
-
 /* PC modu: direkt motor komutu (LINEAR_IDLE / EXTEND / RETRACT). */
 void Linear_SetCmd(uint8_t cmd);
 
