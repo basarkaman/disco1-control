@@ -35,6 +35,17 @@
 #define APP_DAC_THRESHOLD_PCT       52.5f
 #define APP_DAC_GAIN                43.11f
 
+/* ch9 (RC_CH_SR_AUX) anahtari kapaliyken (ON) throttle ust siniri.
+ * Varsayim: DAC ciktisi harici devrede 0-5V tam olcege karsilik geliyor
+ * (MCP4725 kendi VREF'i 3.3V, ama fiili cikis olcegi bu degil olabilir -
+ * gercek oran farkliysa APP_DAC_AUX_LIMIT_FULLSCALE_V'yi guncelle). */
+#define APP_DAC_AUX_LIMIT_V             1.35f
+#define APP_DAC_AUX_LIMIT_FULLSCALE_V   5.0f
+
+/* ch9 anahtari acikken (OFF) throttle ust siniri, ayni fiziksel kanali
+ * mod anahtari ile paylasan CH6 slider'in yuzdesinden okunur. */
+#define RC_CH_THROTTLE_LIMIT   RC_CH_MODE
+
 /* --- Step (stepper) subsystem --- */
 #define APP_STEP_TASK_PERIOD_MS     1u
 #define APP_STEP_DEADBAND_LOW_PCT   45.0f

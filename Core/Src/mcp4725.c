@@ -1,9 +1,14 @@
 #include "mcp4725.h"
 #include "control.h"
 #include "app_config.h"
+#include "rc.h"
 
 static I2C_HandleTypeDef *s_hi2c      = NULL;
 static volatile uint16_t  s_raw12_pc  = 0;
+
+/* ch9 anahtari acikken izin verilen azami raw DAC degeri. */
+#define APP_DAC_AUX_LIMIT_RAW \
+    ((uint16_t)((APP_DAC_AUX_LIMIT_V / APP_DAC_AUX_LIMIT_FULLSCALE_V) * MCP4725_MAX))
 
 /* MCP4725 Fast Mode Write: 2 bayt, ust 4 bit komut (0000) + 12 bit veri */
 static void DAC_Write(uint16_t raw)
@@ -18,21 +23,36 @@ static void DAC_Write(uint16_t raw)
 
 static void Throttle_Update(ControlMode_t mode, float rc_pct)
 {
+    uint16_t raw;
+
     switch (mode) {
         case CTRL_MODE_PC:
-            DAC_Write(s_raw12_pc);
+            raw = s_raw12_pc;
             break;
         case CTRL_MODE_RC:
-            if (rc_pct >= APP_DAC_THRESHOLD_PCT)
-                DAC_Write((uint16_t)((rc_pct - APP_DAC_THRESHOLD_PCT) * APP_DAC_GAIN));
-            else
-                DAC_Write(0);
+            raw = (rc_pct >= APP_DAC_THRESHOLD_PCT)
+                  ? (uint16_t)((rc_pct - APP_DAC_THRESHOLD_PCT) * APP_DAC_GAIN)
+                  : 0;
             break;
         case CTRL_MODE_FAILSAFE:
         default:
-            DAC_Write(0);
+            raw = 0;
             break;
     }
+
+    uint16_t limit_raw;
+    if (RCInput_GetPosPct(RC_CH_SR_AUX) > APP_AUX_THRESHOLD_PCT) {
+        /* anahtar ON (kapali): sabit 1.5V/5V guvenlik tavani */
+        limit_raw = APP_DAC_AUX_LIMIT_RAW;
+    } else {
+        /* anahtar OFF (acik): tavan CH6 slider yuzdesinden okunur */
+        float limit_pct = RCInput_GetPosPct(RC_CH_THROTTLE_LIMIT);
+        limit_raw = (uint16_t)((limit_pct / 100.0f) * MCP4725_MAX);
+    }
+
+    if (raw > limit_raw) raw = limit_raw;
+
+    DAC_Write(raw);
 }
 
 static const ControlSubsystem_t s_throttle_subsystem = {
